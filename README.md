@@ -17,7 +17,7 @@ There is a separate file for each caching service.
 
 The MIT License (MIT)
 
-Copyright (c) 2017 UK LAN Party Techs
+Copyright (c) 2017 Jessica Smith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
