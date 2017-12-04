@@ -1,0 +1,1 @@
+ccs.cdn.wup.shop.nintendo.com
