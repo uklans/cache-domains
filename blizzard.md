@@ -1,0 +1,11 @@
+dist.blizzard.com
+dist.blizzard.com.edgesuite.net
+llnw.blizzard.com
+edgecast.blizzard.com
+blizzard.vo.llnwd.net
+blzddist1-a.akamaihd.net
+blzddist2-a.akamaihd.net
+blzddist3-a.akamaihd.net
+blzddist4-a.akamaihd.net
+level3.blizzard.com
+
