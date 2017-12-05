@@ -8,4 +8,3 @@ blzddist2-a.akamaihd.net
 blzddist3-a.akamaihd.net
 blzddist4-a.akamaihd.net
 level3.blizzard.com
-

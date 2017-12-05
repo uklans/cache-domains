@@ -2,4 +2,3 @@
 origin-a.akamaihd.net
 akamai.cdn.ea.com
 lvlt.cdn.ea.com
-

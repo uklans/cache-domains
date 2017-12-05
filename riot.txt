@@ -1,0 +1,2 @@
+l3cdn.riotgames.com
+worldwide.l3cdn.riotgames.com
