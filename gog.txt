@@ -1,0 +1,4 @@
+cdn.gog.com
+wpc.11df.deltacdn.net
+11df-eu-lb.wpc.edgecastcdn.net
+11df-eu-lb.apr-11df.edgecastdns.net

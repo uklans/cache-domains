@@ -13,3 +13,7 @@ client-download.steampowered.com
 *.hsar.steampowered.com.edgesuite.net
 *.akamai.steamstatic.com
 content-origin.steampowered.com
+clientconfig.akamai.steamtransparent.com
+steampipe.akamaized.net
+edgecast.steamstatic.com
+steam.apac.qtlglb.com.mwcloudcdn.com
