@@ -17,3 +17,6 @@ clientconfig.akamai.steamtransparent.com
 steampipe.akamaized.net
 edgecast.steamstatic.com
 steam.apac.qtlglb.com.mwcloudcdn.com
+*.cs.steampowered.com
+*.edgecast.steamstatic.com
+*.steamcontent.com
