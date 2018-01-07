@@ -11,11 +11,15 @@ You can use this list one of two ways:
  - Overriding DNS for these hostnames to point to the IP of your cache server.
  - Use them in Squid with WCCP to redirect content to the right cache server.
 
-There is a separate file for each caching service. Some notes on formatting:
+There is a separate file for each cacheable service. Some notes on formatting:
 
   - Every line should be a seperate hostname for that service.
-  - Wildcards can be represented with a space.
+  - Wildcards can be represented with an asterix.
+  - Only one wildcard is permitted per line.
+  - If a wildcard is used, it should be the first character on the line.
+  - Wildcards are not treated as matching null, e.g. `*.example.com` will match `a.example.com` but will not match `example.com`
   - Lines starting with a # will be treated as a comment.
+  - Files must end with an empty newline.
 
 ## Updates
 
