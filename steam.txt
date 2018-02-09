@@ -20,3 +20,5 @@ steam.apac.qtlglb.com.mwcloudcdn.com
 *.cs.steampowered.com
 *.edgecast.steamstatic.com
 *.steamcontent.com
+cdn1-sea1.valve.net
+cdn2-sea1.valve.net
