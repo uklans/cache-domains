@@ -1,0 +1,2 @@
+# Daybreak games 
+*.patch.daybreakgames.com

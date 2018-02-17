@@ -16,6 +16,11 @@
 			"domain_files": ["blizzard.txt"]
 		},
 		{
+			"name": "daybreak",
+			"description": "Daybreak games CDN",
+			"domain_files": ["daybreak.txt"]
+		},
+		{
 			"name": "frontier",
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
