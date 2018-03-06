@@ -34,15 +34,28 @@ There is a cache_domains.json file to define CDNs and additional meta deta with 
 }
 ```
 
+### Host file format
+
 There is a separate file for each cacheable service. Some notes on formatting:
 
   - Every line should be a seperate hostname for that service.
-  - Wildcards can be represented with an asterix.
-  - Only one wildcard is permitted per line.
-  - If a wildcard is used, it should be the first character on the line.
-  - Wildcards are not treated as matching null, e.g. `*.example.com` will match `a.example.com` but will not match `example.com`
+  - Only one entry is permitted per line.
+  - Wildcards are permitted as per below
   - Lines starting with a # will be treated as a comment.
   - Files must end with an empty newline.
+
+#### Wildcards
+
+The wildcard format shall be defined as per the below
+
+  - Wildcards should be represented with an asterix.
+  - If a wildcard is used, it should be the first character on the line.
+  - Wildcards are not treated as matching null, e.g. `*.example.com` will match `a.example.com` but will not match `example.com`
+  - Only simple domain wildcards will be accepted eg `*.example.com` not `*ww.example.com`
+  
+##### Notes for Squid users
+
+If you are using these files within a squid dst_domain acl you will need to reformat the wildcard entries to be compliant with the squid acl format. The following regex should suffice `s/*\./\./`
 
 ## Updates
 
