@@ -1,3 +1,4 @@
+# Category: <Games>
 l3cdn.riotgames.com
 worldwide.l3cdn.riotgames.com
 riotgamespatcher-a.akamaihd.net
