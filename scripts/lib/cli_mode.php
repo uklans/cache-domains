@@ -8,7 +8,24 @@ class cli_mode
 	
 	function __construct()
 	{
-		$this->run();
+		if (isset($_SERVER['argv'][1]) && isset($_SERVER['argv'][2]) && isset($_SERVER['argv'][3]) && isset($_SERVER['argv'][4])) 
+		{
+			$server = $_SERVER['argv'][1];
+			$dns_service = array('dns_service' => $_SERVER['argv'][2]);
+			$output_mode = array('filetype' => $_SERVER['argv'][3]);
+			$services = explode(" ", $_SERVER['argv'][4l]);
+
+			foreach ($services as $key => $service) 
+			{
+				$services[$key] = trim($service, " \t\n\r\0\x0B");
+			}
+
+			$this->make_conf($dns_service, $output_mode, $services, $server);
+		}
+		else
+		{
+			$this->run();
+		}
 	}
 
 	function run()
