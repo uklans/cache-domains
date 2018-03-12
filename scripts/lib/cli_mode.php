@@ -198,10 +198,6 @@ class cli_mode
 			echo "No services chosen" . PHP_EOL . PHP_EOL;
 			return $this->services();
 		}
-		elseif (in_array("A", $services))
-		{
-			return $files;
-		}
 		else 
 		{
 			// Ensure that nomather the order the json content is in we always find the correct service if the file name and the service name in the json match
@@ -278,7 +274,7 @@ class cli_mode
 							$services_out[$file] = $cache_server;
 						}
 					}
-					elseif ((is_int(intval($service)) && $service == $key1+1) || $service == strtolower(scrape_between($file, "../../", ".txt"))) 
+					elseif ((is_int(intval($service)) && $service == $key1+1) || $service == strtolower(scrape_between($file, "../../", ".txt")) || $service == "A") 
 					{
 						//Service is a int and and service match the file number we are lokking at, OR, the service name is the same as the file we are lokking in.
 						if ($cache_server == "service_dependent") 
