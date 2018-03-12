@@ -2,7 +2,7 @@
 
 /**
 * Template class to support new dns services
-/ There are 5 places to change data
+* There are 5 places to change data
 */
 class template
 {
