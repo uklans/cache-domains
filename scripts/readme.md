@@ -1,12 +1,12 @@
 # Scripts
 
-##PHP Script
+## PHP Script
 
-###CLI mode (Comandline)
+### CLI mode (Comandline)
 Run the index.php file using php folow the guide in the script.
 The CLI mode support to choose from categories or a single or more services at onces.
 
-####Running without arguments (running in terminal)
+#### Running without arguments (running in terminal)
 * Decide if you want to use different cache servers (using same cache server can result in a cache collision)
 	* Yes, is also default if enter is hit (you enter ip's for the cache based on the service you want to cache later in the script)
 	* No, you type a global ip adresse for the cache
@@ -33,7 +33,7 @@ The CLI mode support to choose from categories or a single or more services at o
 		* Use there number example 1 for apple or just type apple it is up to you
 		* Seperate using space
 
-####Running with arguments
+#### Running with arguments
 * The script takes 3 inputs 
 	* DNS server
 		* unbound
@@ -49,6 +49,6 @@ The CLI mode support to choose from categories or a single or more services at o
 	* Windows
 		* "C:\Program Files\PHP\v7.0\PHP.exe" C:\path\to\file\cache-domains\scripts\index.php unbound conf "steam=192.168.1.1,uplay=192.168.1.2"
 
-###Web mode (hosting on webserver)
+### Web mode (hosting on webserver)
 The web mode do not support what kind of servies you want, all is exported by default.
 Functions is to come.
