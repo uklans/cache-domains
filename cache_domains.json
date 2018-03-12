@@ -3,51 +3,61 @@
 		{
 			"name": "apple",
 			"description": "CDN for apple",
+			"category": "Updates",
 			"domain_files": ["apple.txt"]
 		},
 		{
 			"name": "arenanet",
 			"description": "CDN for guild wars, HoT",
+			"category": "Games",
 			"domain_files": ["arenanet.txt"]
 		},
 		{
 			"name": "blizzard",
 			"description": "CDN for blizzard/battle.net",
+			"category": "Games",
 			"domain_files": ["blizzard.txt"]
 		},
 		{
 			"name": "daybreak",
 			"description": "Daybreak games CDN",
+			"category": "Games",
 			"domain_files": ["daybreak.txt"]
 		},
 		{
 			"name": "frontier",
 			"description": "CDN for frontier games",
+			"category": "Games",
 			"domain_files": ["frontier.txt"]
 		},
 		{
 			"name": "gog",
 			"description": "CDN for good old games downloader",
+			"category": "Games",
 			"domain_files": ["gog.txt"]
 		},
 		{
 			"name": "hirez",
 			"description": "CDN for hirez",
+			"category": "Games",
 			"domain_files": ["hirez.txt"]
 		},
 		{
 			"name": "minecraft",
 			"description": "CDN for minecraft client and updater",
+			"category": "Games",
 			"domain_files": ["minecraft.txt"]
 		},
 		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
+			"category": "Games",
 			"domain_files": ["nexusmods.txt"]
 		},
 		{
 			"name": "nintendo",
 			"description": "CDN for nintendo (swtich)",
+			"category": "Games",
 			"domain_files": ["nintendo.txt"]
 		},
 		{
@@ -55,46 +65,55 @@
 			"description": "CDN for origin",
 			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
 			"mixed_content": true,
+			"category": "Games-SPI",
 			"domain_files": ["origin.txt"]
 		},
 		{
 			"name": "riot",
 			"description": "CDN for riot games",
+			"category": "Games",
 			"domain_files": ["riot.txt"]
 		},
 		{
 			"name": "rockstar",
 			"description": "CDN for rockstar games",
+			"category": "Games",
 			"domain_files": ["rockstar.txt"]
 		},
 		{
 			"name": "sony",
 			"description": "CDN for sony / playstation",
+			"category": "Games",
 			"domain_files": ["sony.txt"]
 		},
 		{
 			"name": "steam",
 			"description": "CDN for steam platform",
+			"category": "Games",
 			"domain_files": ["steam.txt"]
 		},
 		{
 			"name": "uplay",
 			"description": "CDN for uplay downloader",
+			"category": "Games",
 			"domain_files": ["uplay.txt"]
 		},
 		{
 			"name": "wargaming",
 			"description": "CDN for wargaming.net",
+			"category": "Games",
 			"domain_files": ["wargaming.net.txt"]
 		},
 		{
-			"name": "wsus",
+			"name": "windowsupdates",
 			"description": "CDN for windows updates",
+			"category": "Updates",
 			"domain_files": ["windowsupdates.txt"]
 		},
 		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
+			"category": "Games",
 			"domain_files": ["xboxlive.txt"]
 		}
 	]
