@@ -177,24 +177,25 @@ class cli_mode
 
 					$category = scrape_between($lines[0], "<", ">");
 
-					if 	(($service == "G" || $service == "GS") && trim(strtolower($category)) == strtolower("Games"))
+					if 	(($service == "G" || $service == "GS" || strtolower($service) == "games" || strtolower($service) == "games-spi") && trim(strtolower($category)) == strtolower("Games"))
 					{
 						$services_out[$key1] = $file;
 					}
-					elseif (($service == "GS" || $service == "GSO") && strtolower($category) == strtolower("Games-SPI"))
+					elseif (($service == "GS" || $service == "GSO" || strtolower($service) == "games-spi") && strtolower($category) == strtolower("Games-SPI"))
 					{
 						$services_out[$key1] = $file;
 					}
-					elseif ($service == "U" && strtolower($category) == strtolower("Updates")) 
+					elseif (($service == "U" || strtolower($service) == "updates") && strtolower($category) == strtolower("Updates")) 
 					{
 						$services_out[$key1] = $file;
 					}
-					elseif ($service == "O" && strtolower($category) == strtolower("Other")) 
+					elseif (($service == "O" || strtolower($service) == "other") && strtolower($category) == strtolower("Other")) 
 					{
 						$services_out[$key1] = $file;
 					}
-					elseif (is_int(intval($service)) && $service == $key1+1) 
+					elseif ((is_int(intval($service)) && $service == $key1+1) || $service == strtolower(scrape_between($file, "../../", ".txt"))) 
 					{
+						//Service is a int and and service match the file number we are lokking at, OR, the service name is the same as the file we are lokking in.
 						$services_out[$key1] = $file;
 					}
 				}
