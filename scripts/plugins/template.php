@@ -28,22 +28,18 @@ class template
         // ----------------------------------------------------------
         $files = glob($dir_path . "../../*.txt");
 
-        foreach ($services as $key => $service) 
-        {
-            $services[$key] = scrape_between($service, "../../", ".txt");
-        }
-        
         $output = "";
 
         foreach($files as $file) 
         {
-            if (in_array(scrape_between($file, "../../", ".txt"), $services)) 
+            if (array_key_exists(scrape_between($file, "../../", ".txt"), $services)) 
             {
+                $server = $services[scrape_between($file, "../../", ".txt")];
                 // ----------------------------------------------------------
                 // Change below me
                 // ----------------------------------------------------------
                 // Change the # to match comments in youre services (default # starts comment if not changed)
-                $output .= "# File: " . scrape_between($file, "../../", ".txt"); 
+                $output .= "# File: " . scrape_between($file, "../../", ".txt") . PHP_EOL; 
                 // ----------------------------------------------------------
                 // Change above me
                 // ----------------------------------------------------------

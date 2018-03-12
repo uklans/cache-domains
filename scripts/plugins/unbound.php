@@ -14,25 +14,21 @@ class unbound
         }
     }
 
-    function make($mode, $services, $server)
+    function make($mode, $services)
     {
         /// Files - Always finde the correct path in cli
         $dir_path = __FILE__;
         $dir_path = str_replace("unbound.php", "", $dir_path);
         $files = glob($dir_path . "../../*.txt");
 
-        foreach ($services as $key => $service) 
-        {
-            $services[$key] = scrape_between($service, "../../", ".txt");
-        }
-
         $output = "";
 
         foreach($files as $file) 
         {
-            if (in_array(scrape_between($file, "../../", ".txt"), $services)) 
+            if (array_key_exists(scrape_between($file, "../../", ".txt"), $services)) 
             {
-                $output .= "# File: " . scrape_between($file, "../../", ".txt");
+                $server = $services[scrape_between($file, "../../", ".txt")];
+                $output .= "# File: " . scrape_between($file, "../../", ".txt") . PHP_EOL;
                 foreach (file($file) as $key => $line) 
                 {
                     $line = trim($line, " \t\n\r\0\x0B");

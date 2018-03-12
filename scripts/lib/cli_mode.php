@@ -8,19 +8,20 @@ class cli_mode
 	
 	function __construct()
 	{
-		if (isset($_SERVER['argv'][1]) && isset($_SERVER['argv'][2]) && isset($_SERVER['argv'][3]) && isset($_SERVER['argv'][4])) 
+		if (isset($_SERVER['argv'][1]) && isset($_SERVER['argv'][2]) && isset($_SERVER['argv'][3])) 
 		{
-			$server = $_SERVER['argv'][1];
-			$dns_service = array('dns_service' => $_SERVER['argv'][2]);
-			$output_mode = array('filetype' => $_SERVER['argv'][3]);
-			$services = explode(" ", $_SERVER['argv'][4l]);
+			$dns_service = array('dns_service' => $_SERVER['argv'][1]);
+			$output_mode = array('filetype' => $_SERVER['argv'][2]);
+			$convert_to_array = explode(',', $_SERVER['argv'][3]);
 
-			foreach ($services as $key => $service) 
-			{
-				$services[$key] = trim($service, " \t\n\r\0\x0B");
+			for($i=0; $i < count($convert_to_array ); $i++){
+			    $key_value = explode('=', $convert_to_array [$i]);
+			    $end_array[trim($key_value [0])] = trim($key_value [1]);
+
 			}
+			$services = $end_array;
 
-			$this->make_conf($dns_service, $output_mode, $services, $server);
+			$this->make_conf($dns_service, $output_mode, $services); //Server ip comes from $services
 		}
 		else
 		{
@@ -30,24 +31,43 @@ class cli_mode
 
 	function run()
 	{
-		$server = $this->dns_server();
+		$cache_server = $this->cache_server();
 		$dns_service = $this->dns_service();
 		$output_mode = $this->output_mode($dns_service["filetype"]);
-		$services = $this->services();
-		$this->make_conf($dns_service, $output_mode, $services, $server);
+		$services = $this->services($cache_server);
+		$this->make_conf($dns_service, $output_mode, $services); //Server ip comes from $services
 	}
 
-	function dns_server()
+	function cache_server()
 	{
 		echo "// ------------------------------------------------------------------------------- //" . PHP_EOL;
-		echo "Type ip of the dns server" . PHP_EOL;
+		echo "Do you want to use different cache servers" . PHP_EOL;
+		echo "Warning: using same cache server can result in a cache collision" . PHP_EOL;
+		echo "Default is yes (hit enter)" . PHP_EOL;
+		echo "Y/y = yes" . PHP_EOL;
+		echo "N/n = no" . PHP_EOL;
 
 		$handle = fopen ("php://stdin","r");
 		$cli_input = fgets($handle);
 		$cli_input = strtolower($cli_input);
-		$dns_server = trim($cli_input);
+		$cli_input = trim($cli_input);
 
-		return $dns_server;
+		if ($cli_input == "y" || $cli_input == "yes") 
+		{
+			return "service_dependent";
+		}
+		elseif ($cli_input == "n" || $cli_input == "no")
+		{
+			echo "// ------------------------------------------------------------------------------- //" . PHP_EOL;
+			echo "Type ip of the cache server" . PHP_EOL;
+
+			$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+			return $cache_server_ip;
+		}
+		else
+		{
+			return "service_dependent";
+		}
 	}
 
 	function dns_service()
@@ -73,7 +93,7 @@ class cli_mode
 		}
 		else
 		{
-			echo "Mode not supported, try agrin" . PHP_EOL;
+			echo "Mode not supported, try agrin" . PHP_EOL . PHP_EOL;
 			return $this->dns_service();
 		}
 	}
@@ -130,7 +150,7 @@ class cli_mode
 		}
 	}
 
-	function services()
+	function services($cache_server)
 	{
 		echo "// ------------------------------------------------------------------------------- //" . PHP_EOL;
 		echo "Choice a service pack or make your own." . PHP_EOL;
@@ -157,7 +177,6 @@ class cli_mode
 		foreach ($files as $key => $file) 
 		{
 			$file = scrape_between($file, "../../", ".txt");
-			//$file = str_replace(".txt", "", $file);
 			echo $key+1 . " = " . $file . PHP_EOL;;
 		}
 
@@ -185,6 +204,13 @@ class cli_mode
 		}
 		else 
 		{
+			// Ensure that nomather the order the json content is in we always find the correct service if the file name and the service name in the json match
+			$json = json_decode(file_get_contents($dir_path . "../../cache_domains.json"), true);
+			foreach ($json["cache_domains"] as $key => $service) 
+			{
+				$json["cache_domains"][$service["name"]] = $service;
+			}
+
 			// Packs/catagoris
 			foreach ($services as $key => $service) 
 			{
@@ -192,28 +218,80 @@ class cli_mode
 				{
 					$lines = file($file);
 
-					$category = scrape_between($lines[0], "<", ">");
+					$file = scrape_between($file, "../../", ".txt");
 
-					if 	(($service == "G" || $service == "GS" || strtolower($service) == "games" || strtolower($service) == "games-spi") && trim(strtolower($category)) == strtolower("Games"))
+					$category = $json["cache_domains"][$file]["category"];
+
+					if 	(($service == "G" || $service == "GS" || strtolower($service) == "games" || strtolower($service) == "games-spi") && strtolower($category) == strtolower("Games"))
 					{
-						$services_out[$key1] = $file;
+						if ($cache_server == "service_dependent") 
+						{
+							echo "Type cache server ip for " . $file . PHP_EOL;
+							$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+
+							$services_out[$file] = $cache_server_ip;
+						}
+						else
+						{
+							$services_out[$file] = $cache_server;
+						}
 					}
 					elseif (($service == "GS" || $service == "GSO" || strtolower($service) == "games-spi") && strtolower($category) == strtolower("Games-SPI"))
 					{
-						$services_out[$key1] = $file;
+						if ($cache_server == "service_dependent") 
+						{
+							echo "Type cache server ip for " . $file . PHP_EOL;
+							$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+
+							$services_out[$file] = $cache_server_ip;
+						}
+						else
+						{
+							$services_out[$file] = $cache_server;
+						}
 					}
 					elseif (($service == "U" || strtolower($service) == "updates") && strtolower($category) == strtolower("Updates")) 
 					{
-						$services_out[$key1] = $file;
+						if ($cache_server == "service_dependent") 
+						{
+							echo "Type cache server ip for " . $file . PHP_EOL;
+							$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+
+							$services_out[$file] = $cache_server_ip;
+						}
+						else
+						{
+							$services_out[$file] = $cache_server;
+						}
 					}
 					elseif (($service == "O" || strtolower($service) == "other") && strtolower($category) == strtolower("Other")) 
 					{
-						$services_out[$key1] = $file;
+						if ($cache_server == "service_dependent") 
+						{
+							echo "Type cache server ip for " . $file . PHP_EOL;
+							$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+
+							$services_out[$file] = $cache_server_ip;
+						}
+						else
+						{
+							$services_out[$file] = $cache_server;
+						}
 					}
 					elseif ((is_int(intval($service)) && $service == $key1+1) || $service == strtolower(scrape_between($file, "../../", ".txt"))) 
 					{
 						//Service is a int and and service match the file number we are lokking at, OR, the service name is the same as the file we are lokking in.
-						$services_out[$key1] = $file;
+						if ($cache_server == "service_dependent") 
+						{
+							echo "Type cache server ip for " . $file . PHP_EOL;
+							$cache_server_ip = $this->get_and_validate_ip_from_input(); //Loops until you get it right
+
+							$services_out[$file] = $cache_server_ip;
+						}
+						else
+						{
+							$services_out[$file] = $cache_server;
+						}
 					}
 				}
 			}
@@ -230,7 +308,7 @@ class cli_mode
 		}
 	}
 
-	function make_conf($dns_service, $output_mode, $services, $server)
+	function make_conf($dns_service, $output_mode, $services)
 	{
 		// Always finde the correct path in cli
 		$dir_path = __FILE__;
@@ -241,7 +319,7 @@ class cli_mode
 		if ($dns_service["dns_service"] == "unbound") 
 		{
 			$unbound = new unbound("cli");
-			$output = $unbound->make("cli", $services, $server);
+			$output = $unbound->make("cli", $services);
 		}
 		elseif ($dns_service["dns_service"] == "other_service_replace_me") 
 		{
@@ -253,16 +331,54 @@ class cli_mode
 			exit;
 		}
 
-		if ($output_mode["filetype"] == "echo") 
+
+		if ($output == "" || $output == NULL) 
 		{
-			echo $output;
+			echo "An error occurred making DNS output data" . PHP_EOL;
+			echo "No data from DNS making plugin: " . $dns_service["dns_service"];
 		}
 		else
 		{
-			file_put_contents($dir_path . "../output/services." . $output_mode["filetype"], $output);
-			echo "Output done";
+			if ($output_mode["filetype"] == "echo") 
+			{
+				echo $output;
+			}
+			else
+			{
+				if(!is_dir($dir_path . "../output"))
+				{
+					echo "Making output folder" . PHP_EOL;
+					mkdir($dir_path . "../output");
+					echo $dir_path . "../output". PHP_EOL;
+				}
+				file_put_contents($dir_path . "../output/services." . $output_mode["filetype"], $output);
+				echo "File: " . $dir_path . "../output/services." . $output_mode["filetype"] . PHP_EOL;
+				echo "Output done";
+			}
 		}
 
+	}
+
+	function get_and_validate_ip_from_input()
+	{
+		//Loops until you get it right
+		$handle = fopen ("php://stdin","r");
+		$cli_input = fgets($handle);
+		$cli_input = strtolower($cli_input);
+		$cache_server_ip = trim($cli_input);
+
+		// Validate ip
+		if (filter_var($cache_server_ip, FILTER_VALIDATE_IP)) 
+		{
+		    echo $cache_server_ip . " is a valid IP address" . PHP_EOL . PHP_EOL;
+		    return $cache_server_ip;
+		} 
+		else 
+		{
+		    echo $cache_server_ip . " is not a valid IP address" . PHP_EOL . PHP_EOL;
+		    echo "Try agrin" . PHP_EOL;
+		    return $this->get_and_validate_ip_from_input(); //Loops until you get it right
+		}
 	}
 }
 
