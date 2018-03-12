@@ -1,3 +1,2 @@
-# Category: <Games>
 # Daybreak games 
 *.patch.daybreakgames.com

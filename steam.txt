@@ -1,4 +1,3 @@
-# Category: <Games>
 *.content.steampowered.com
 content1.steampowered.com
 content2.steampowered.com

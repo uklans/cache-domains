@@ -1,4 +1,3 @@
-# Category: <Updates>
 officecdn.microsoft.com
 *.windowsupdate.com
 windowsupdate.com
