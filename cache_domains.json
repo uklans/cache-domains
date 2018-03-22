@@ -83,6 +83,11 @@
 			"domain_files": ["uplay.txt"]
 		},
 		{
+			"name": "twitch",
+			"description": "CDN for twitch games / mods and addons",
+			"domain_files": ["twitchapp.txt"]
+		},
+		{
 			"name": "wargaming",
 			"description": "CDN for wargaming.net",
 			"domain_files": ["wargaming.net.txt"]
