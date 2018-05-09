@@ -22,3 +22,5 @@ steam.apac.qtlglb.com.mwcloudcdn.com
 *.steamcontent.com
 cdn1-sea1.valve.net
 cdn2-sea1.valve.net
+*.steam-content-dnld-1.apac-1-cdn.cqloud.com
+steam.apac.qtlglb.com
