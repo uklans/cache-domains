@@ -1,2 +1,2 @@
 # Daybreak games 
-*.patch.daybreakgames.com
+pls.patch.daybreakgames.com
