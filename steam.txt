@@ -26,3 +26,4 @@ cdn2-sea1.valve.net
 steam.apac.qtlglb.com
 edge.steam-dns.top.comcast.net
 edge.steam-dns-2.top.comcast.net
+steamcdn-a.akamaihd.net
