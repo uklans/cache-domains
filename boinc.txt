@@ -1,5 +1,5 @@
 # Acoustics@home
-www.acousticsathome.ru
+acousticsathome.ru
 
 # Amicable Numbers
 sech.me
@@ -11,14 +11,14 @@ asteroidsathome.net
 csgrid.org
 
 # Climateprediction.net
-www.cpdn.org
-www.climateprediction.net
+cpdn.org
+climateprediction.net
 
 # Collatz Conjecture
 boinc.thesonntags.com
 
 # Cosmology@Home
-www.cosmologyathome.org
+cosmologyathome.org
 
 # DENIS@Home
 denis.usj.es
@@ -31,13 +31,13 @@ einstein.phys.uwm.edu
 einsteinathome.org
 
 # Enigma@Home
-www.enigmaathome.net
+enigmaathome.net
 
 # Gerasim@Home
 gerasim.boinc.ru
 
 # GPUGrid.net
-www.gpugrid.net
+gpugrid.net
 
 # LHC@home
 lhcathome.cern.ch
@@ -64,10 +64,10 @@ boinc.progger.info
 boinc.multi-pool.info
 
 # primaboinca
-www.primaboinca.com
+primaboinca.com
 
 # PrimeGrid
-www.primegrid.com
+primegrid.com
 
 # Quake Catcher Network
 quakecatcher.net
@@ -76,7 +76,7 @@ quakecatcher.net
 radioactiveathome.org
 
 # RNA World
-www.rnaworld.de
+rnaworld.de
 
 # Rosetta@home
 boinc.bakerlab.org
@@ -94,7 +94,7 @@ srbase.my-firewall.org
 universeathome.pl
 
 # World Community Grid
-www.worldcommunitygrid.org
+worldcommunitygrid.org
 
 # Yoyo@home
-www.rechenkraft.net
+rechenkraft.net
