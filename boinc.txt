@@ -1,0 +1,100 @@
+# Acoustics@home
+acousticsathome.ru
+
+# Amicable Numbers
+sech.me
+
+# Asteroids@home
+asteroidsathome.net
+
+# Citizen Science Grid
+csgrid.org
+
+# Climateprediction.net
+cpdn.org
+climateprediction.net
+
+# Collatz Conjecture
+boinc.thesonntags.com
+
+# Cosmology@Home
+cosmologyathome.org
+
+# DENIS@Home
+denis.usj.es
+
+# Distributed Hardware Evolution Project
+dhep.ga
+
+# Einstein@home
+einstein.phys.uwm.edu
+einsteinathome.org
+
+# Enigma@Home
+enigmaathome.net
+
+# Gerasim@Home
+gerasim.boinc.ru
+
+# GPUGrid.net
+gpugrid.net
+
+# LHC@home
+lhcathome.cern.ch
+
+# Milkyway@home
+milkyway.cs.rpi.edu
+
+# MindModeling@Home
+mindmodeling.org
+
+# Moo! Wrapper
+moowrap.net
+
+# NFS@home
+escatter11.fullerton.edu
+
+# NumberFields@home
+numberfields.asu.edu
+
+# ODLK
+boinc.progger.info
+
+# ODLK1
+boinc.multi-pool.info
+
+# primaboinca
+primaboinca.com
+
+# PrimeGrid
+primegrid.com
+
+# Quake Catcher Network
+quakecatcher.net
+
+# Radioactive@Home
+radioactiveathome.org
+
+# RNA World
+rnaworld.de
+
+# Rosetta@home
+boinc.bakerlab.org
+
+# SAT@home
+sat.isa.ru
+
+# SETI@home
+setiathome.berkeley.edu
+
+# SRBase
+srbase.my-firewall.org
+
+# Universe@Home
+universeathome.pl
+
+# World Community Grid
+worldcommunitygrid.org
+
+# Yoyo@home
+rechenkraft.net
