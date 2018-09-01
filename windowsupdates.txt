@@ -4,3 +4,4 @@ windowsupdate.com
 *.dl.delivery.mp.microsoft.com
 *.update.microsoft.com
 *.do.dsp.mp.microsoft.com
+*.microsoft.com.edgesuite.net
