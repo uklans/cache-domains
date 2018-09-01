@@ -1,0 +1,12 @@
+rxp-fl.cncirc.net
+rxp-chi.cncirc.net
+rxp-nz.cncirc.net
+rxp-bgr.cncirc.net
+rxp-fr.cncirc.net
+rxp-nyc.cncirc.net
+rxp-uk.cncirc.net
+rxp-sg.cncirc.net
+rxp-la.cncirc.net
+rxp-fin.cncirc.net
+denver1.renegade-x.com
+seattle1.renegade-x.com
