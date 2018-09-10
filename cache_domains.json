@@ -26,11 +26,6 @@
 			"domain_files": ["frontier.txt"]
 		},
 		{
-			"name": "gog",
-			"description": "CDN for good old games downloader",
-			"domain_files": ["gog.txt"]
-		},
-		{
 			"name": "hirez",
 			"description": "CDN for hirez",
 			"domain_files": ["hirez.txt"]
