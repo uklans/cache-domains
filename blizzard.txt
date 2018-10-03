@@ -10,3 +10,4 @@ blzddist4-a.akamaihd.net
 level3.blizzard.com
 nydus.battle.net
 edge.blizzard.top.comcast.net
+cdn.blizzard.com
