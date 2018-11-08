@@ -1,1 +1,3 @@
 swcdn.apple.com
+osxapps.itunes.apple.com
+iosapps.itunes.apple.com
