@@ -27,3 +27,6 @@ steam.apac.qtlglb.com
 edge.steam-dns.top.comcast.net
 edge.steam-dns-2.top.comcast.net
 steamcdn-a.akamaihd.net
+steam.naeu.qtlglb.com
+steampipe-kr.akamaized.net
+steam.ix.asn.au
