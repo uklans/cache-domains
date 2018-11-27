@@ -30,3 +30,4 @@ steamcdn-a.akamaihd.net
 steam.naeu.qtlglb.com
 steampipe-kr.akamaized.net
 steam.ix.asn.au
+steam.eca.qtlglb.com 
