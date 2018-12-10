@@ -31,11 +31,6 @@
 			"domain_files": ["hirez.txt"]
 		},
 		{
-			"name": "minecraft",
-			"description": "CDN for minecraft client and updater",
-			"domain_files": ["minecraft.txt"]
-		},
-		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
 			"domain_files": ["nexusmods.txt"]
