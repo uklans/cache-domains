@@ -1,4 +1,4 @@
-dl.wargaming.net
+dl1.wargaming.net
 dl2.wargaming.net
 wg.gcdn.co
 wargaming.net.edgesuite.ne
