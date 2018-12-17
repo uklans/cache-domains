@@ -1,7 +1,6 @@
-dl.wargaming.net
+dl1.wargaming.net
 dl2.wargaming.net
 wg.gcdn.co
-wargaming.net.edgesuite.ne
 wgusst-na.wargaming.net
 wgusst-eu.wargaming.net
 update-v4r4h10x.worldofwarships.com
