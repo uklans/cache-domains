@@ -31,3 +31,4 @@ steam.naeu.qtlglb.com
 steampipe-kr.akamaized.net
 steam.ix.asn.au
 steam.eca.qtlglb.com 
+steam.cdn.on.net
