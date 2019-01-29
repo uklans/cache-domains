@@ -95,7 +95,8 @@
 		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
-			"domain_files": ["xboxlive.txt"]
+			"domain_files": ["xboxlive.txt"],
+			"mixed_content": true
 		}
 	]
 }
