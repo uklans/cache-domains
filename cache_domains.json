@@ -97,6 +97,11 @@
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"],
 			"mixed_content": true
+		},
+		{
+			"name": "crossfire",
+			"description": "CDN for crossfire",
+			"domain_files": ["crossfire.txt"]
 		}
 	]
 }
