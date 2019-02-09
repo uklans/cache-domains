@@ -9,3 +9,4 @@ wgus-wotasia.wargaming.net
 dl-wot-ak.wargaming.net
 dl-wot-gc.wargaming.net
 dl-wot-cdx.wargaming.net
+dl-wowp-gc.wargaming.net
