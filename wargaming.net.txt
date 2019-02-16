@@ -7,5 +7,8 @@ update-v4r4h10x.worldofwarships.com
 dl-wows-ak.wargaming.net
 wgus-wotasia.wargaming.net
 dl-wot-ak.wargaming.net
+dl-wot-gt.wargaming.net
 dl-wot-gc.wargaming.net
 dl-wot-cdx.wargaming.net
+dl-wows-gc.wargaming.net
+dl-wows-se.wargaming.net 
