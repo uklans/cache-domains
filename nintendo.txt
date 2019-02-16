@@ -1,5 +1,3 @@
-a1702.g.akamai.net
-e6022.d.akamaiedge.net
 idbe-wup.cdn.nintendo.net
 idbe-wup.cdn.nintendo.net.edgekey.net
 ccs.cdn.wup.shop.nintendo.com
@@ -20,18 +18,3 @@ atum.hac.lp1.d4c.nintendo.net
 bugyo.hac.lp1.eshop.nintendo.net
 pushmo.hac.lp1.eshop.nintendo.net
 tagaya.hac.lp1.eshop.nintendo.net
-*.deploy.static.akamaitechnologies.com
-*.us-west-2.compute.amazonaws.com
-a.root-servers.net
-b.root-servers.net
-c.root-servers.net
-d.root-servers.net
-e.root-servers.net
-f.root-servers.net
-g.root-servers.net
-h.root-servers.net
-i.root-servers.net
-j.root-servers.net
-k.root-servers.net
-l.root-servers.net
-m.root-servers.net
