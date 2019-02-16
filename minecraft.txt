@@ -1,5 +1,5 @@
 launcher.mojang.com
 launchermeta.mojang.com
 libraries.minecraft.net
-resources.minecraft.net
+resources.minecraft.net # How did I get this from the minecraft launcher?
 resources.download.minecraft.net
