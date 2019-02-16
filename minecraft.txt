@@ -1,5 +1,5 @@
 launcher.mojang.com
 launchermeta.mojang.com
-libraries.minecraft.net
+libraries.minecraft.net # Unable to test via web browser due to 403 Error
 resources.minecraft.net # How did I get this from the minecraft launcher?
 resources.download.minecraft.net
