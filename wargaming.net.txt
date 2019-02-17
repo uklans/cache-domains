@@ -17,4 +17,3 @@ dl-wowp-ak.wargaming.net
 dl-wowp-gc.wargaming.net
 dl-wowp-se.wargaming.net 
 dl-wowp-cdx.wargaming.net
-
