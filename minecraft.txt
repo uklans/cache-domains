@@ -1,0 +1,5 @@
+launcher.mojang.com
+launchermeta.mojang.com
+libraries.minecraft.net
+resources.minecraft.net
+resources.download.minecraft.net
