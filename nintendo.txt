@@ -1,5 +1,3 @@
-idbe-wup.cdn.nintendo.net
-idbe-wup.cdn.nintendo.net.edgekey.net
 ccs.cdn.wup.shop.nintendo.com
 ccs.cdn.wup.shop.nintendo.net
 ccs.cdn.wup.shop.nintendo.net.edgesuite.net
@@ -7,14 +5,9 @@ geisha-wup.cdn.nintendo.net
 geisha-wup.cdn.nintendo.net.edgekey.net
 idbe-wup.cdn.nintendo.net
 idbe-wup.cdn.nintendo.net.edgekey.net
-ninja.wup.shop.nintendo.net
-ninja.wup.eshop.nintendo.net
-tagaya.wup.shop.nintendo.net
-tagaya.wup.eshop.nintendo.net
 ecs-lp1.hac.shop.nintendo.net
 receive-lp1.dg.srv.nintendo.net
-aqua.hac.lp1.d4c.nintendo.net
-atum.hac.lp1.d4c.nintendo.net
-bugyo.hac.lp1.eshop.nintendo.net
-pushmo.hac.lp1.eshop.nintendo.net
-tagaya.hac.lp1.eshop.nintendo.net
+*.wup.shop.nintendo.net
+*.wup.eshop.nintendo.net
+*.hac.lp1.d4c.nintendo.net
+*.hac.lp1.eshop.nintendo.net
