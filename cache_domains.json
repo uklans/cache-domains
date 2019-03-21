@@ -37,7 +37,7 @@
 		},
 		{
 			"name": "nintendo",
-			"description": "CDN for nintendo (swtich)",
+			"description": "CDN for Nintendo consoles and servers",
 			"domain_files": ["nintendo.txt"]
 		},
 		{
