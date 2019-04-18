@@ -39,6 +39,7 @@
 			"name": "nintendo",
 			"description": "CDN for Nintendo consoles and download servers",
 			"domain_files": ["nintendo.txt"]
+			"mixed_content": true
 		},
 		{
 			"name": "origin",
