@@ -18,6 +18,7 @@ steampipe.akamaized.net
 edgecast.steamstatic.com
 steam.apac.qtlglb.com.mwcloudcdn.com
 *.cs.steampowered.com
+*.cm.steampowered.com
 *.edgecast.steamstatic.com
 *.steamcontent.com
 cdn1-sea1.valve.net
