@@ -65,7 +65,7 @@
 		{
 			"name": "rsi",
 			"desscription": "CDN for Star Citizen"
-			"domain_FILES": ["rsi.txt"]
+			"domain_files": ["rsi.txt"]
 		},
 		{
 			"name": "sony",
