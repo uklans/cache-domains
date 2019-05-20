@@ -1,0 +1,4 @@
+launcher2.robertsspaceindustries.com
+builds.robertsspaceindustries.com
+install.robertsspaceindustries.com
+public.universe.robertsspaceindustries.com
