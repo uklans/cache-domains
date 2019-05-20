@@ -63,6 +63,11 @@
 			"domain_files": ["rockstar.txt"]
 		},
 		{
+			"name": "rsi",
+			"desscription": "CDN for Star Citizen"
+			"domain_FILES": ["rsi.txt"]
+		},
+		{
 			"name": "sony",
 			"description": "CDN for sony / playstation",
 			"domain_files": ["sony.txt"]
