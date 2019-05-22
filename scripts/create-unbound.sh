@@ -15,8 +15,13 @@ fi
 
 cachenamedefault="disabled"
 
-while read line; do 
-	ip=$(jq -r ".ips[\"${line}\"]" config.json)
+while read line; do
+	linecount=$(jq -r ".ips[\"${line}\"]" config.json |wc -l)
+	if [[ $linecount -eq 1 ]]; then
+		ip=$(jq -r ".ips[\"${line}\"]" config.json)
+	else
+		ip=$(jq -r ".ips[\"${line}\"][]" config.json |tr '\n' ' ')
+	fi
 	declare "cacheip$line"="$ip"
 done <<< $(jq -r '.ips | to_entries[] | .key' config.json)
 
@@ -56,7 +61,10 @@ while read entry; do
 					continue
 				fi
 				echo "  local-zone: \"${parsed}\" redirect" >> $outputfile
-				echo "  local-data: \"${parsed} 30 IN A ${cacheip}\"" >> $outputfile
+				cacheiplist=($cacheip)
+				for i in "${cacheiplist[@]}"; do
+					echo "  local-data: \"${parsed} 30 IN A ${i}\"" >> $outputfile
+				done
 			done <<< $(cat ${basedir}/$filename);
 		done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
 	done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)

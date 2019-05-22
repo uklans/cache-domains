@@ -57,6 +57,16 @@ The wildcard format shall be defined as per the below
 
 If you are using these files within a squid dst_domain acl you will need to reformat the wildcard entries to be compliant with the squid acl format. The following regex should suffice `s/*\./\./`
 
+### Multiple IP Addresses
+
+unbound supports assigning multiple IP addresses to a record (can be used if using multiple caches). Example config formatting:
+```json
+"ips": {
+        "steam":        [ "10.10.3.11", "10.10.3.12", "10.10.3.13" ],
+        "generic":      "10.10.3.16"
+},
+```
+
 ## Updates
 
 Please fork this repository and submit pull requests if you have any extra hostnames or services to add. We want this list to be definitive and collaborative!
