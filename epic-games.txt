@@ -1,0 +1,5 @@
+epicgames-download1.akamaized.net
+download.epicgames.com
+download2.epicgames.com
+download3.epicgames.com
+download4.epicgames.com
