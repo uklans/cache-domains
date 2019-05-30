@@ -23,7 +23,8 @@
 		{
 			"name": "epic-games",
 			"description": "CDN for Epic Games",
-			"domain_files": ["epic-games.txt"]
+			"domain_files": ["epic-games.txt"],
+			"mixed_content": true
 		},
 		{
 			"name": "frontier",
