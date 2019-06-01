@@ -14,7 +14,7 @@ You can use this list one of two ways:
 There is a cache_domains.json file to define CDNs and additional meta deta with the following structure
 
 - cache_domains: Array of cache_domain object
-	- name: shortname for the cache domain
+	- name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
 	- description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
 	- notes: implementation specific notes which may be useful for other users
 	- mixed_content: true if this domain hosts mixed https and http content (a straight dns injection is unlikely to work in this case). Assumed to be false if undefined
@@ -43,6 +43,7 @@ There is a separate file for each cacheable service. Some notes on formatting:
   - Wildcards are permitted as per below
   - Lines starting with a # will be treated as a comment.
   - Files must end with an empty newline.
+  - File names must match the regular expression `^[0-9A-Za-z].txt`
 
 #### Wildcards
 
