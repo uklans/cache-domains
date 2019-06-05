@@ -21,7 +21,7 @@
 			"domain_files": ["daybreak.txt"]
 		},
 		{
-			"name": "epic-games",
+			"name": "epic_games",
 			"description": "CDN for Epic Games",
 			"domain_files": ["epic-games.txt"],
 			"mixed_content": true
