@@ -16,7 +16,7 @@ fi
 cachenamedefault="disabled"
 
 while read line; do 
-	ip=$(jq -r ".ips[\"${line}\"]" config.json)
+	ip=$(jq ".ips[\"${line}\"]" config.json)
 	declare "cacheip$line"="$ip"
 done <<< $(jq -r '.ips | to_entries[] | .key' config.json)
 
@@ -39,7 +39,7 @@ while read entry; do
 		continue;
 	fi
 	cacheipname="cacheip${!cachename}"
-	cacheip=${!cacheipname}
+	cacheip=$(jq -r 'if type == "array" then .[] else . end' <<< ${!cacheipname} | xargs)
 	while read fileid; do
 		while read filename; do
 			destfilename=$(echo $filename | sed -e 's/txt/conf/')
@@ -56,7 +56,9 @@ while read entry; do
 					continue
 				fi
 				echo "  local-zone: \"${parsed}\" redirect" >> $outputfile
-				echo "  local-data: \"${parsed} 30 IN A ${cacheip}\"" >> $outputfile
+				for i in ${cacheip}; do
+					echo "  local-data: \"${parsed} 30 IN A ${i}\"" >> $outputfile
+				done
 			done <<< $(cat ${basedir}/$filename);
 		done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
 	done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
