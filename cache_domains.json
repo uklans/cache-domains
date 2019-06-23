@@ -84,6 +84,12 @@
 			"domain_files": ["uplay.txt"]
 		},
 		{
+			"name": "teso",
+			"description": "CDN for The Elder Scrolls Online",
+			"mixed_content": true,
+			"domain_files": ["teso.txt"]
+		},
+		{
 			"name": "twitch",
 			"description": "CDN for twitch games / mods and addons",
 			"domain_files": ["twitchapp.txt"]
