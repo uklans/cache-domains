@@ -70,6 +70,10 @@ If the CDN you are adding does not already exist please remember to add an entry
 
 Please raise all issues and feedback on GitHub at [uklans/cache-domains](https://github.com/uklans/cache-domains/issues).
 
+## Useful Information
+
+There are a few useful anecdotes on cache domains usage in some old issues https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aclosed+label%3Afor-reference-only
+
 ## License
 
 The MIT License (MIT)
