@@ -18,11 +18,13 @@ steampipe.akamaized.net
 edgecast.steamstatic.com
 steam.apac.qtlglb.com.mwcloudcdn.com
 *.cs.steampowered.com
+*.cm.steampowered.com
 *.edgecast.steamstatic.com
 *.steamcontent.com
 cdn1-sea1.valve.net
 cdn2-sea1.valve.net
 *.steam-content-dnld-1.apac-1-cdn.cqloud.com
+*.steam-content-dnld-1.eu-c1-cdn.cqloud.com
 steam.apac.qtlglb.com
 edge.steam-dns.top.comcast.net
 edge.steam-dns-2.top.comcast.net

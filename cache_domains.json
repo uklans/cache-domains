@@ -21,6 +21,12 @@
 			"domain_files": ["daybreak.txt"]
 		},
 		{
+			"name": "epicgames",
+			"description": "CDN for Epic Games",
+			"domain_files": ["epicgames.txt"],
+			"mixed_content": true
+		},
+		{
 			"name": "frontier",
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
@@ -48,11 +54,11 @@
 			"mixed_content": true,
 			"domain_files": ["origin.txt"]
 		},
-                {
-                        "name": "renegadex",
-                        "description": "CDN for Renegade X",
-                        "domain_files": ["renegadex.txt"]
-                },
+		{
+			"name": "renegadex",
+			"description": "CDN for Renegade X",
+			"domain_files": ["renegadex.txt"]
+		},
 		{
 			"name": "riot",
 			"description": "CDN for riot games",
@@ -79,6 +85,12 @@
 			"domain_files": ["uplay.txt"]
 		},
 		{
+			"name": "teso",
+			"description": "CDN for The Elder Scrolls Online",
+			"mixed_content": true,
+			"domain_files": ["teso.txt"]
+		},
+		{
 			"name": "twitch",
 			"description": "CDN for twitch games / mods and addons",
 			"domain_files": ["twitchapp.txt"]
@@ -101,4 +113,3 @@
 		}
 	]
 }
-
