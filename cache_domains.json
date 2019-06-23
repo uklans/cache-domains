@@ -43,7 +43,7 @@
 		},
 		{
 			"name": "nintendo",
-			"description": "CDN for nintendo (swtich)",
+			"description": "CDN for nintendo (switch)",
 			"domain_files": ["nintendo.txt"]
 		},
 		{
@@ -53,11 +53,11 @@
 			"mixed_content": true,
 			"domain_files": ["origin.txt"]
 		},
-                {
-                        "name": "renegadex",
-                        "description": "CDN for Renegade X",
-                        "domain_files": ["renegadex.txt"]
-                },
+		{
+			"name": "renegadex",
+			"description": "CDN for Renegade X",
+			"domain_files": ["renegadex.txt"]
+		},
 		{
 			"name": "riot",
 			"description": "CDN for riot games",
@@ -112,4 +112,3 @@
 		}
 	]
 }
-
