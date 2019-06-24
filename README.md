@@ -66,6 +66,12 @@ Please fork this repository and submit pull requests if you have any extra hostn
 
 If the CDN you are adding does not already exist please remember to add an entry within cache_domains.json as well as a new .txt file
 
+### Uncacheable CDNs
+
+Certain CDNs are not suitable for inclusion on this list because the content is entirely delivered over HTTPS and thus cannot be cached.
+
+For a list of currently identified uncacheable CDNs please see these issues: https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix
+
 ## Issues and Feedback
 
 Please raise all issues and feedback on GitHub at [uklans/cache-domains](https://github.com/uklans/cache-domains/issues).
