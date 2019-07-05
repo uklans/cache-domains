@@ -42,6 +42,11 @@
 			"domain_files": ["nexusmods.txt"]
 		},
 		{
+			"name": "neverwinter",
+			"description": "Cryptic CDN for Neverwinter",
+			"domain_files": ["neverwinter.txt"],
+		},
+		{
 			"name": "nintendo",
 			"description": "CDN for Nintendo consoles and download servers",
 			"domain_files": ["nintendo.txt"],
