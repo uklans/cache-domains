@@ -17,7 +17,6 @@ There is a cache_domains.json file to define CDNs and additional meta deta with 
 	- name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
 	- description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
 	- notes: implementation specific notes which may be useful for other users
-	- mixed_content: true if this domain hosts mixed https and http content (a straight dns injection is unlikely to work in this case). Assumed to be false if undefined
 	- domain_files: array of files within the repo assosciated to the cdn. Most cdn's only need one file
 	- Example domain entry for origin
 ```json
@@ -27,7 +26,6 @@ There is a cache_domains.json file to define CDNs and additional meta deta with 
 			"name": "origin",
 			"description": "CDN for origin",
 			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-			"mixed_content": true,
 			"domain_files": ["origin.txt"]
 		}
 	]

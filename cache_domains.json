@@ -23,8 +23,7 @@
 		{
 			"name": "epicgames",
 			"description": "CDN for Epic Games",
-			"domain_files": ["epicgames.txt"],
-			"mixed_content": true
+			"domain_files": ["epicgames.txt"]
 		},
 		{
 			"name": "frontier",
@@ -49,8 +48,7 @@
 		{
 			"name": "nintendo",
 			"description": "CDN for Nintendo consoles and download servers",
-			"domain_files": ["nintendo.txt"],
-			"mixed_content": true
+			"domain_files": ["nintendo.txt"]
 		},
 		{
 			"name": "renegadex",
@@ -85,7 +83,6 @@
 		{
 			"name": "teso",
 			"description": "CDN for The Elder Scrolls Online",
-			"mixed_content": true,
 			"domain_files": ["teso.txt"]
 		},
 		{
@@ -111,8 +108,7 @@
 		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
-			"domain_files": ["xboxlive.txt"],
-			"mixed_content": true
+			"domain_files": ["xboxlive.txt"]
 		}
 	]
 }
