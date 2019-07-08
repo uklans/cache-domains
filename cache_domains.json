@@ -44,7 +44,7 @@
 		{
 			"name": "neverwinter",
 			"description": "Cryptic CDN for Neverwinter",
-			"domain_files": ["neverwinter.txt"],
+			"domain_files": ["neverwinter.txt"]
 		},
 		{
 			"name": "nintendo",
