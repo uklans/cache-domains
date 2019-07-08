@@ -51,12 +51,6 @@
 			"domain_files": ["nintendo.txt"]
 		},
 		{
-			"name": "origin",
-			"description": "CDN for origin",
-			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-			"domain_files": ["origin.txt"]
-		},
-		{
 			"name": "renegadex",
 			"description": "CDN for Renegade X",
 			"domain_files": ["renegadex.txt"]
