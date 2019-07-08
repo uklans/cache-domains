@@ -42,6 +42,11 @@
 			"domain_files": ["nexusmods.txt"]
 		},
 		{
+			"name": "neverwinter",
+			"description": "Cryptic CDN for Neverwinter",
+			"domain_files": ["neverwinter.txt"]
+		},
+		{
 			"name": "nintendo",
 			"description": "CDN for Nintendo consoles and download servers",
 			"domain_files": ["nintendo.txt"],
@@ -87,6 +92,11 @@
 			"name": "twitch",
 			"description": "CDN for twitch games / mods and addons",
 			"domain_files": ["twitch.txt"]
+		},
+		{
+			"name": "warframe",
+			"description": "CDN for Warframe",
+			"domain_files": ["warframe.txt"]
 		},
 		{
 			"name": "wargaming",
