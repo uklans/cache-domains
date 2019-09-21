@@ -14,21 +14,20 @@ You can use this list one of two ways:
 There is a cache_domains.json file to define CDNs and additional meta deta with the following structure
 
 - cache_domains: Array of cache_domain object
-	- name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
-	- description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
-	- notes: implementation specific notes which may be useful for other users
-	- domain_files: array of files within the repo assosciated to the cdn. Most cdn's only need one file
-	- Example domain entry for origin
+    - name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
+    - description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
+    - notes: implementation specific notes which may be useful for other users
+    - domain_files: array of files within the repo assosciated to the cdn. Most cdn's only need one file
+    - Example domain entry for steam
 ```json
 {
-	"cache_domains": [
-		{
-			"name": "origin",
-			"description": "CDN for origin",
-			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-			"domain_files": ["origin.txt"]
-		}
-	]
+    "cache_domains": [
+        {
+            "name": "steam",
+            "description": "CDN for steam platform",
+            "domain_files": ["steam.txt"]
+        }
+    ]
 }
 ```
 
@@ -51,7 +50,7 @@ The wildcard format shall be defined as per the below
   - If a wildcard is used, it should be the first character on the line.
   - Wildcards are not treated as matching null, e.g. `*.example.com` will match `a.example.com` but will not match `example.com`
   - Only simple domain wildcards will be accepted eg `*.example.com` not `*ww.example.com`
-  
+
 ##### Notes for Squid users
 
 If you are using these files within a squid dst_domain acl you will need to reformat the wildcard entries to be compliant with the squid acl format. The following regex should suffice `s/*\./\./`
