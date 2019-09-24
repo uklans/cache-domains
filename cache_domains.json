@@ -42,8 +42,8 @@
 		},
 		{
 			"name": "nvidia",
-			"desscription": "CDN for Star Citizen"
-			"domain_files":	["nvidia.txt"]
+			"description": "CDN for nintendo (swtich)",
+			"domain_files": ["nvidia.txt"]
 		},
 		{
 			"name": "origin",
@@ -69,8 +69,8 @@
 		},
 		{
 			"name": "rsi",
-			"desscription": "CDN for Star Citizen"
-			"domain_files":	["rsi.txt"]
+			"description": "CDN for nintendo (swtich)",
+			"domain_files": ["rsi.txt"]
 		},
 		{
 			"name": "sony",
@@ -78,9 +78,9 @@
 			"domain_files": ["sony.txt"]
 		},
 		{
-			"name": "squareenix",
-			"description": "CDN for steam platform",
-			"domain_files":	["squareenix.txt"]
+			"name": "ffxiv",
+			"description": "CDN for nintendo (swtich)",
+			"domain_files": ["ffxiv.txt"]
 		},
 		{
 			"name": "steam",
