@@ -2,5 +2,7 @@ img.finalfantasyxiv.com
 img.finalfantasyxiv.com.edgekey.net
 *.g.akamaiedge.net
 *.g*.akamai.net
+patch-gamever.ffxiv.com
 patch-bootver.ffxiv.com
 patch-bootver.ffxiv.com.edgesuite.net
+*.root-servers.net
