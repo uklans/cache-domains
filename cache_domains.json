@@ -43,7 +43,7 @@
 		{
 			"name": "nvidia",
 			"desscription": "CDN for Star Citizen"
-			"domain_files": ["nvidia.txt"]
+			"domain_files":	["nvidia.txt"]
 		},
 		{
 			"name": "origin",
@@ -70,7 +70,7 @@
 		{
 			"name": "rsi",
 			"desscription": "CDN for Star Citizen"
-			"domain_files": ["rsi.txt"]
+			"domain_files":	["rsi.txt"]
 		},
 		{
 			"name": "sony",
@@ -80,7 +80,7 @@
 		{
 			"name": "squareenix",
 			"description": "CDN for steam platform",
-			"domain_files": ["squareenix.txt"]
+			"domain_files":	["squareenix.txt"]
 		},
 		{
 			"name": "steam",
