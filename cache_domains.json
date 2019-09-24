@@ -41,6 +41,11 @@
 			"domain_files": ["nintendo.txt"]
 		},
 		{
+			"name": "nvidia",
+			"desscription": "CDN for Star Citizen"
+			"domain_files": ["nvidia.txt"]
+		},
+		{
 			"name": "origin",
 			"description": "CDN for origin",
 			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
