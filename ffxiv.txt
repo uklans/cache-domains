@@ -5,4 +5,3 @@ img.finalfantasyxiv.com.edgekey.net
 patch-gamever.ffxiv.com
 patch-bootver.ffxiv.com
 patch-bootver.ffxiv.com.edgesuite.net
-frontier.ffxiv.com
