@@ -78,6 +78,11 @@
 			"domain_files": ["sony.txt"]
 		},
 		{
+			"name": "squareenix",
+			"description": "CDN for steam platform",
+			"domain_files": ["squareenix.txt"]
+		},
+		{
 			"name": "steam",
 			"description": "CDN for steam platform",
 			"domain_files": ["steam.txt"]
