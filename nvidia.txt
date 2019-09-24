@@ -1,0 +1,3 @@
+us.download.nvidia.com
+us.download.nvidia.com.*
+*.wpc.phicdn.net
