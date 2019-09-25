@@ -74,7 +74,7 @@
 		},
 		{
 			"name": "ffxiv",
-			"description": "CDN for nintendo (swtich)",
+			"description": "CDN for SquareEnix / FFXIV Launcher/Patcher",
 			"domain_files": ["ffxiv.txt"]
 		},
 		{
