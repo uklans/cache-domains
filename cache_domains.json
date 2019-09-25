@@ -41,11 +41,6 @@
 			"domain_files": ["nintendo.txt"]
 		},
 		{
-			"name": "nvidia",
-			"description": "CDN for nintendo (swtich)",
-			"domain_files": ["nvidia.txt"]
-		},
-		{
 			"name": "origin",
 			"description": "CDN for origin",
 			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
