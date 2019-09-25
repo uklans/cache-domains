@@ -21,6 +21,11 @@
 			"domain_files": ["daybreak.txt"]
 		},
 		{
+			"name": "epicgames",
+			"description": "CDN for Epic Games",
+			"domain_files": ["epicgames.txt"]
+		},
+		{
 			"name": "frontier",
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
@@ -36,16 +41,14 @@
 			"domain_files": ["nexusmods.txt"]
 		},
 		{
-			"name": "nintendo",
-			"description": "CDN for nintendo (swtich)",
-			"domain_files": ["nintendo.txt"]
+			"name": "neverwinter",
+			"description": "Cryptic CDN for Neverwinter",
+			"domain_files": ["neverwinter.txt"]
 		},
 		{
-			"name": "origin",
-			"description": "CDN for origin",
-			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-			"mixed_content": true,
-			"domain_files": ["origin.txt"]
+			"name": "nintendo",
+			"description": "CDN for Nintendo consoles and download servers",
+			"domain_files": ["nintendo.txt"]
 		},
 		{
 			"name": "renegadex",
@@ -83,9 +86,19 @@
 			"domain_files": ["uplay.txt"]
 		},
 		{
+			"name": "teso",
+			"description": "CDN for The Elder Scrolls Online",
+			"domain_files": ["teso.txt"]
+		},
+		{
 			"name": "twitch",
 			"description": "CDN for twitch games / mods and addons",
-			"domain_files": ["twitchapp.txt"]
+			"domain_files": ["twitch.txt"]
+		},
+		{
+			"name": "warframe",
+			"description": "CDN for Warframe",
+			"domain_files": ["warframe.txt"]
 		},
 		{
 			"name": "wargaming",
@@ -100,9 +113,7 @@
 		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
-			"domain_files": ["xboxlive.txt"],
-			"mixed_content": true
+			"domain_files": ["xboxlive.txt"]
 		}
 	]
 }
-

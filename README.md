@@ -14,10 +14,9 @@ You can use this list one of two ways:
 There is a cache_domains.json file to define CDNs and additional meta deta with the following structure
 
 - cache_domains: Array of cache_domain object
-	- name: shortname for the cache domain
+	- name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
 	- description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
 	- notes: implementation specific notes which may be useful for other users
-	- mixed_content: true if this domain hosts mixed https and http content (a straight dns injection is unlikely to work in this case). Assumed to be false if undefined
 	- domain_files: array of files within the repo assosciated to the cdn. Most cdn's only need one file
 	- Example domain entry for origin
 ```json
@@ -27,7 +26,6 @@ There is a cache_domains.json file to define CDNs and additional meta deta with 
 			"name": "origin",
 			"description": "CDN for origin",
 			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-			"mixed_content": true,
 			"domain_files": ["origin.txt"]
 		}
 	]
@@ -43,6 +41,7 @@ There is a separate file for each cacheable service. Some notes on formatting:
   - Wildcards are permitted as per below
   - Lines starting with a # will be treated as a comment.
   - Files must end with an empty newline.
+  - File names must match the regular expression `^[0-9A-Za-z].txt`
 
 #### Wildcards
 
@@ -65,9 +64,19 @@ Please fork this repository and submit pull requests if you have any extra hostn
 
 If the CDN you are adding does not already exist please remember to add an entry within cache_domains.json as well as a new .txt file
 
+### Uncacheable CDNs
+
+Certain CDNs are not suitable for inclusion on this list because the content is entirely delivered over HTTPS and thus cannot be cached.
+
+For a list of currently identified uncacheable CDNs please see these issues: https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix
+
 ## Issues and Feedback
 
 Please raise all issues and feedback on GitHub at [uklans/cache-domains](https://github.com/uklans/cache-domains/issues).
+
+## Useful Information
+
+There are a few useful anecdotes on cache domains usage in some old issues https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aclosed+label%3Afor-reference-only
 
 ## License
 
