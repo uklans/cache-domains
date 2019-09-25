@@ -68,11 +68,6 @@
 			"domain_files": ["rockstar.txt"]
 		},
 		{
-			"name": "rsi",
-			"description": "CDN for nintendo (swtich)",
-			"domain_files": ["rsi.txt"]
-		},
-		{
 			"name": "sony",
 			"description": "CDN for sony / playstation",
 			"domain_files": ["sony.txt"]
