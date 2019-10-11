@@ -15,19 +15,19 @@ fi
 
 cachenamedefault="disabled"
 
-while read line; do
+while read -r line; do
         ip=$(jq ".ips[\"${line}\"]" config.json)
         declare "cacheip$line"="$ip"
 done <<< $(jq -r '.ips | to_entries[] | .key' config.json)
 
-while read line; do
+while read -r line; do
         name=$(jq -r ".cache_domains[\"${line}\"]" config.json)
         declare "cachename$line"="$name"
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
 mkdir -p ${outputdir}
-while read entry; do
+while read -r entry; do
         unset cacheip
         unset cachename
         key=$(jq -r ".cache_domains[$entry].name" $path)
@@ -40,22 +40,22 @@ while read entry; do
         fi
         cacheipname="cacheip${!cachename}"
         cacheip=$(jq -r 'if type == "array" then .[] else . end' <<< ${!cacheipname} | xargs)
-        while read fileid; do
-                while read filename; do
+        while read -r fileid; do
+                while read -r filename; do
                         destfilename=$(echo $filename | sed -e 's/txt/conf/')
                         outputfile=${outputdir}/${destfilename}
-                        touch $outputfile
-                        while read fileentry; do
+                        touch "$outputfile"
+                        while read -r fileentry; do
                                 # Ignore comments
                                 if [[ $fileentry == \#* ]]; then
                                         continue
                                 fi
                                 parsed=$(echo $fileentry | sed -e "s/^\*\.//")
-                                if grep -q "$parsed" $outputfile; then
+                                if grep -q "$parsed" "$outputfile"; then
                                         continue
                                 fi
                                 for i in ${cacheip}; do
-                                        echo "address=/${parsed}/${i}" >> $outputfile
+                                        echo "address=/${parsed}/${i}" >> "$outputfile"
                                 done
                         done <<< $(cat ${basedir}/$filename);
                 done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
