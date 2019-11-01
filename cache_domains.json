@@ -16,6 +16,11 @@
 			"domain_files": ["blizzard.txt"]
 		},
 		{
+			"name": "cityofheroes",
+			"description": "CDN for City of Heroes (Homecoming)",
+			"domain_files": ["cityofheroes.txt"]
+		},
+		{
 			"name": "daybreak",
 			"description": "Daybreak games CDN",
 			"domain_files": ["daybreak.txt"]
