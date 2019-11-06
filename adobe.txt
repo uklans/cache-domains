@@ -1,0 +1,4 @@
+ardownload.adobe.com
+ccmdl.adobe.com
+agsupdate.adobe.com
+*.adobe.com.edgesuite.net

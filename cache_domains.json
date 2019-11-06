@@ -1,6 +1,11 @@
 {
 	"cache_domains": [
 		{
+                        "name": "adobe",
+                        "description": "CDN for Adobe",
+                        "domain_files": ["adobe.txt"]
+                },
+		{
 			"name": "apple",
 			"description": "CDN for apple",
 			"domain_files": ["apple.txt"]
