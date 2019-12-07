@@ -1,6 +1,11 @@
 {
 	"cache_domains": [
 		{
+			"name": "apple",
+			"description": "CDN for Apple Software Update, iTunes"
+			"domain_files": ["apple.txt"]
+		},
+		{
 			"name": "arenanet",
 			"description": "CDN for guild wars, HoT",
 			"domain_files": ["arenanet.txt"]
