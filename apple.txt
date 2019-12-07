@@ -1,0 +1,17 @@
+albert.apple.com
+appldnld.apple.com
+configuration.apple.com
+*.cdn-apple.com
+deimos3.apple.com
+gg*.apple.com
+gs.apple.com
+itunes.apple.com
+*.itunes.apple.com
+mesu.apple.com
+*.mzstatic.com
+skl.apple.com
+swscan.apple.com
+swdownload.apple.com
+swcdn.apple.com
+swdist.apple.com
+xp.apple.com
