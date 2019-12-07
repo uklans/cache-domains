@@ -2,7 +2,7 @@
 	"cache_domains": [
 		{
 			"name": "apple",
-			"description": "CDN for Apple Software Update, iTunes"
+			"description": "CDN for Apple Software Update, iTunes",
 			"domain_files": ["apple.txt"]
 		},
 		{
