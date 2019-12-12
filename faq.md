@@ -22,7 +22,7 @@ There are several reasons why a particular service / CDN / website might not be 
 
  1. It's not technically possible to cache it. Many popular websites, including video streaming sites and even some games CDN's use SSL Encryption (i.e https URLs) to serve their content. Because the client opens a secure connection directly to the host, there is no way for the network operator to see what they are downloading, nor cache it. Whilst there are several approaches to work around this, such as MITM techniques, they usually rely on control over the client device to control SSL Certificates - control somebody running a BYOC LAN typically does not have over the devices customers bring.
  
-   https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix Contains a list of game CDNs that we would like to include, but cannot for this reason. 
+   - https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix Contains a list of game CDNs that we would like to include, but cannot for this reason. 
  
  2. It's out of scope for a LAN. We try to keep this list targeted towards people running LANs. Whilst some none game-related CDNs are included for things like windows updates that use internet bandwidth at LANs, we do not go searching for unrelated sites / hostnames.
  
