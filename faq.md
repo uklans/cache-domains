@@ -35,3 +35,7 @@ There are several reasons why a particular service / CDN / website might not be 
 [lancachenet/sniproxy](https://github.com/lancachenet/sniproxy) is part of the lancache project and allows hostnames that serve BOTH http and https content to be included in this list. Traffic going to that hostname on port 80 (http) will hit lancache and be cached, whilst traffic on port 443 (HTTPS) is passed straight through to the internet.
 
 It does not allow https / SSL content to be inspected or cached. Hostnames that serve all or almost all https traffic are still unlikely to be good candidates for this list, as it just places load on the cache box but does not save any internet bandwidth.
+
+## How can I test an addition to this list?
+
+If you are using the lancachenet project, you can fork this repo, add your test hostnames and then use [these instructions](https://github.com/lancachenet/lancache-dns#custom-forksbranches) to use it with your cache instance rather than the main repo.
