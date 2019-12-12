@@ -2,3 +2,4 @@ d3rmjivj4k4f0t.cloudfront.net
 addons.forgesvc.net
 media.forgecdn.net
 files.forgecdn.net
+vod-metro.twitch.tv
