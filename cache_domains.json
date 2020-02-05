@@ -112,7 +112,7 @@
 		}
 		{
 			"name": "SupComFAF",
-			"description": "CDN for Supreme Commander FAF",
+			"description": "CDN for SupCom FAF",
 			"domain_files": ["faf.txt"]
 		}
 	]
