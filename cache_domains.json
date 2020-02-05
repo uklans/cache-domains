@@ -110,5 +110,10 @@
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
 		}
+		{
+			"name": "SupComFAF",
+			"description": "CDN for Supreme Commander FAF",
+			"domain_files": ["faf.txt"]
+		}
 	]
 }
