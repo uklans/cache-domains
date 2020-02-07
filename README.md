@@ -69,6 +69,10 @@ Certain CDNs are not suitable for inclusion on this list because the content is 
 
 For a list of currently identified uncacheable CDNs please see these issues: https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix
 
+## Frequently Asked Questions
+
+If you have any questions, please check [our FAQs](faq.md).
+
 ## Issues and Feedback
 
 Please raise all issues and feedback on GitHub at [uklans/cache-domains](https://github.com/uklans/cache-domains/issues).
