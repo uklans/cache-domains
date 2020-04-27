@@ -64,7 +64,7 @@
 		},
 		{
 			"name": "pathofexile",
-			"description": "Path Of Exile CDN",
+			"description": "CDN for Path Of Exile",
 			"domain_files": ["pathofexile.txt"]
 		},
 		{
