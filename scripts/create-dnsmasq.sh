@@ -42,7 +42,7 @@ while read -r entry; do
         cacheip=$(jq -r 'if type == "array" then .[] else . end' <<< ${!cacheipname} | xargs)
         while read -r fileid; do
                 while read -r filename; do
-                        destfilename=$(echo $filename | sed -e 's/txt/conf/')
+                        destfilename=$(echo $filename | sed -e 's/txt/hosts/')
                         outputfile=${outputdir}/${destfilename}
                         touch "$outputfile"
                         while read -r fileentry; do
@@ -55,7 +55,7 @@ while read -r entry; do
                                         continue
                                 fi
                                 for i in ${cacheip}; do
-                                        echo "address=/${parsed}/${i}" >> "$outputfile"
+                                        echo "${i} ${parsed}" >> "$outputfile"
                                 done
                         done <<< $(cat ${basedir}/$filename);
                 done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
