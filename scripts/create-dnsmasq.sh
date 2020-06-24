@@ -27,6 +27,7 @@ done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
 mkdir -p ${outputdir}
+touch ${outputdir}/lancache.conf
 while read -r entry; do
         unset cacheip
         unset cachename
@@ -44,6 +45,7 @@ while read -r entry; do
                 while read -r filename; do
                         destfilename=$(echo $filename | sed -e 's/txt/hosts/')
                         outputfile=${outputdir}/${destfilename}
+                        echo "addn-hosts=/etc/dnsmasq.d/${destfilename}" >> ${outputdir}/lancache.conf
                         touch "$outputfile"
                         while read -r fileentry; do
                                 # Ignore comments
