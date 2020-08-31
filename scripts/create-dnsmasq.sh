@@ -44,9 +44,25 @@ while read -r entry; do
         while read -r fileid; do
                 while read -r filename; do
                         destfilename=$(echo $filename | sed -e 's/txt/hosts/')
+                        lancacheconf=${outputdir}/lancache.conf
                         outputfile=${outputdir}/${destfilename}
-                        echo "addn-hosts=/etc/dnsmasq.d/${destfilename}" >> ${outputdir}/lancache.conf
+                        echo "addn-hosts=/etc/dnsmasq.d/${destfilename}" >> ${lancacheconf}
                         touch "$outputfile"
+                        # Wildcard entries
+                        while read -r fileentry; do
+                                # Ignore comments
+                                if [[ $fileentry == \#* ]]; then
+                                        continue
+                                fi
+                                wildcard=$(echo $fileentry | grep "*." | sed -e "s/^\*\.//")
+                                if grep -q "$wildcard" "$lancacheconf"; then
+                                        continue
+                                fi
+                                for i in ${cacheip}; do
+                                        echo "address=/${wildcard}/${i}" >> "$lancacheconf"
+                                done
+                        done <<< $(cat ${basedir}/$filename);
+                        # All other entries
                         while read -r fileentry; do
                                 # Ignore comments
                                 if [[ $fileentry == \#* ]]; then
