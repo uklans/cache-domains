@@ -63,6 +63,11 @@
 			"domain_files": ["origin.txt"]
 		},
 		{
+			"name": "pathofexile",
+			"description": "CDN for Path Of Exile",
+			"domain_files": ["pathofexile.txt"]
+		},
+		{
 			"name": "renegadex",
 			"description": "CDN for Renegade X",
 			"domain_files": ["renegadex.txt"]
