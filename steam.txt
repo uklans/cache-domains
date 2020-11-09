@@ -25,6 +25,8 @@ steam.apac.qtlglb.com.mwcloudcdn.com
 cdn1-sea1.valve.net
 cdn2-sea1.valve.net
 162-254-198-14.valve.net
+162-254-198-17.valve.net
+162-254-198-18.valve.net
 162-254-198-78.valve.net
 162-254-198-131.valve.net
 *.steam-content-dnld-1.apac-1-cdn.cqloud.com
