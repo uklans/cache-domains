@@ -1,6 +1,10 @@
 #!/bin/bash
 basedir=".."
-outputdir="output/dnsmasq"
+outputdir="output"
+confpath="/etc/dnsmasq.d"
+confdir="${outputdir}${confpath}"
+hostspath="/etc/dnsmasq.hosts"
+hostsdir="${outputdir}${hostspath}"
 path="${basedir}/cache_domains.json"
 
 export IFS=' '
@@ -26,8 +30,9 @@ while read -r line; do
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
-mkdir -p ${outputdir}
-touch ${outputdir}/lancache.conf
+mkdir -p ${confdir}
+mkdir -p ${hostsdir}
+touch ${confdir}/lancache.conf
 while read -r entry; do
         unset cacheip
         unset cachename
@@ -44,9 +49,9 @@ while read -r entry; do
         while read -r fileid; do
                 while read -r filename; do
                         destfilename=$(echo $filename | sed -e 's/txt/hosts/')
-                        lancacheconf=${outputdir}/lancache.conf
-                        outputfile=${outputdir}/${destfilename}
-                        echo "addn-hosts=/etc/dnsmasq.d/${destfilename}" >> ${lancacheconf}
+                        lancacheconf=${confdir}/lancache.conf
+                        outputfile=${hostsdir}/${destfilename}
+                        echo "addn-hosts=${hostspath}/${destfilename}" >> ${lancacheconf}
                         touch "$outputfile"
                         # Wildcard entries
                         while read -r fileentry; do
