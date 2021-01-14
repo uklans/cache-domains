@@ -11,6 +11,11 @@
 			"domain_files": ["blizzard.txt"]
 		},
 		{
+			"name": "bsg",
+			"description": "CDN for Battle State Games, Tarkov",
+			"domain_files": ["bsg.txt"]
+		},
+		{
 			"name": "cityofheroes",
 			"description": "CDN for City of Heroes (Homecoming)",
 			"domain_files": ["cityofheroes.txt"]
@@ -51,6 +56,18 @@
 			"domain_files": ["nintendo.txt"]
 		},
 		{
+			"name": "origin",
+			"description": "CDN for origin",
+			"notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
+			"mixed_content": true,
+			"domain_files": ["origin.txt"]
+		},
+		{
+			"name": "pathofexile",
+			"description": "CDN for Path Of Exile",
+			"domain_files": ["pathofexile.txt"]
+		},
+		{
 			"name": "renegadex",
 			"description": "CDN for Renegade X",
 			"domain_files": ["renegadex.txt"]
@@ -69,6 +86,11 @@
 			"name": "sony",
 			"description": "CDN for sony / playstation",
 			"domain_files": ["sony.txt"]
+		},
+		{
+			"name": "square",
+			"description": "CDN for Final Fantasy XIV",
+			"domain_files": ["square.txt"]
 		},
 		{
 			"name": "steam",

@@ -1,4 +1,3 @@
-officecdn.microsoft.com
 *.windowsupdate.com
 windowsupdate.com
 *.dl.delivery.mp.microsoft.com
