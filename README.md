@@ -11,13 +11,13 @@ You can use this list one of two ways:
  - Overriding DNS for these hostnames to point to the IP of your cache server.
  - Use them in Squid with WCCP to redirect content to the right cache server.
 
-There is a cache_domains.json file to define CDNs and additional meta deta with the following structure
+There is a cache_domains.json file to define CDNs and additional metadata with the following structure
 
 - cache_domains: Array of cache_domain object
     - name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
     - description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
     - notes: implementation specific notes which may be useful for other users
-    - domain_files: array of files within the repo assosciated to the cdn. Most cdn's only need one file
+    - domain_files: array of files within the repo associated to the cdn. Most CDNs only need one file
     - Example domain entry for steam
 ```json
 {
@@ -35,7 +35,7 @@ There is a cache_domains.json file to define CDNs and additional meta deta with 
 
 There is a separate file for each cacheable service. Some notes on formatting:
 
-  - Every line should be a seperate hostname for that service.
+  - Every line should be a separate hostname for that service.
   - Only one entry is permitted per line.
   - Wildcards are permitted as per below
   - Lines starting with a # will be treated as a comment.
@@ -46,10 +46,10 @@ There is a separate file for each cacheable service. Some notes on formatting:
 
 The wildcard format shall be defined as per the below
 
-  - Wildcards should be represented with an asterix.
+  - Wildcards should be represented with an asterisk.
   - If a wildcard is used, it should be the first character on the line.
   - Wildcards are not treated as matching null, e.g. `*.example.com` will match `a.example.com` but will not match `example.com`
-  - Only simple domain wildcards will be accepted eg `*.example.com` not `*ww.example.com`
+  - Only simple domain wildcards will be accepted e.g. `*.example.com` not `*ww.example.com`
 
 ##### Notes for Squid users
 

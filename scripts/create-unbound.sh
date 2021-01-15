@@ -52,14 +52,21 @@ while read entry; do
 					continue
 				fi
 				parsed=$(echo $fileentry | sed -e "s/^\*\.//")
-				if grep -q "$parsed" $outputfile; then
+				if grep -qx "$parsed" $outputfile; then
 					continue
 				fi
 				echo "  local-zone: \"${parsed}\" redirect" >> $outputfile
 				for i in ${cacheip}; do
 					echo "  local-data: \"${parsed} 30 IN A ${i}\"" >> $outputfile
 				done
-			done <<< $(cat ${basedir}/$filename);
+			done <<< $(cat ${basedir}/$filename | sort);
 		done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
 	done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' $path)
+
+cat << EOF
+Configuration generation completed.
+
+Please copy the following files:
+- ./${outputdir}/*.conf to /etc/unbound/unbound.conf.d/
+EOF
