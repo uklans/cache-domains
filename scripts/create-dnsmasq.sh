@@ -80,4 +80,10 @@ while read -r entry; do
         done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' $path)
 
-echo "Please copy the following files:\n- ./output/dnsmasq/lancache.conf to /etc/dnsmasq/dnsmasq.d/\n- ./output/dnsmasq/hosts to /etc/dnsmasq/"
+cat << EOF
+Configuration generation completed.
+
+Please copy the following files:
+- ./${outputdir}/lancache.conf to /etc/dnsmasq/dnsmasq.d/
+- ./${outputdir}/hosts to /etc/dnsmasq/
+EOF

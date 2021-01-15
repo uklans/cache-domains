@@ -63,3 +63,10 @@ while read entry; do
 		done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
 	done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' $path)
+
+cat << EOF
+Configuration generation completed.
+
+Please copy the following files:
+- ./${outputdir}/*.conf to /etc/unbound/unbound.conf.d/
+EOF
