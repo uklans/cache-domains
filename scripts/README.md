@@ -46,4 +46,4 @@ The `lancache.conf` should be copied into the `/etc/dnsmasq.d/` location but als
 You can copy the `*.hosts` file to any location other than `/etc/dnsmasq.d/` as this location is utilised only for `*.conf` files.
 
 For example if utilising Pi-hole a user can copy the `*.hosts` files to `/etc/pihole/` and modify the `lancache.conf` with the following command, prior to copying it to `/etc/dnsmasq.d/`:
-`sed -i 's/dnsmasq.d/pihole/g' output/dnsmasq/lancache.conf`
+`sed -i 's/dnsmasq\/hosts/pihole/g' output/dnsmasq/lancache.conf`
