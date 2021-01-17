@@ -69,6 +69,10 @@ while read -r entry; do
                                         continue
                                 fi
                                 parsed=$(echo $fileentry)
+                                # Ignore empty lines
+                                if [[ -z "$parsed" ]]; then
+                                    continue
+                                fi
                                 if grep -qx "$parsed" "$outputfile"; then
                                         continue
                                 fi
