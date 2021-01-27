@@ -64,8 +64,8 @@ while read -r entry; do
                         done <<< $(cat ${basedir}/$filename | sort);
                         # All other entries
                         while read -r fileentry; do
-                                # Ignore comments and wildcards
-                                if [[ $fileentry =~ ^(\#|\*\.) ]]; then
+                                # Ignore comments, newlines and wildcards
+                                if [[ $fileentry =~ ^(\#|\*\.) ]] || [[ -z $fileentry ]]; then
                                         continue
                                 fi
                                 parsed=$(echo $fileentry)
