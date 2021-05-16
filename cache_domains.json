@@ -133,6 +133,11 @@
 			"domain_files": ["gameloop.txt"]
 		},
 		{
+			"name": "youtube",
+			"description": "CDN for youtube",
+			"domain_files": ["youtube.txt"]
+		},
+		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
