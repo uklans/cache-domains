@@ -1,0 +1,2 @@
+*.youtube.com
+*.ytimg.com
