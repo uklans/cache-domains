@@ -108,11 +108,6 @@
 			"domain_files": ["teso.txt"]
 		},
 		{
-			"name": "twitch",
-			"description": "CDN for twitch games / mods and addons",
-			"domain_files": ["twitch.txt"]
-		},
-		{
 			"name": "warframe",
 			"description": "CDN for Warframe",
 			"domain_files": ["warframe.txt"]
