@@ -51,7 +51,7 @@ while read entry; do
 					continue
 				fi
 				parsed=$(echo $fileentry | sed -e "s/^\*\.//")
-				if grep -qx "$parsed" $outputfile; then
+				if grep -qx "  local-zone: \"${parsed}\" redirect" $outputfile; then
 					continue
 				fi
         if [[ $(head -n 1 $outputfile) != "server:" ]]; then
