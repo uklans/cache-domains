@@ -11,7 +11,6 @@ apac-tyo.nexusbytes.ren-x.com
 eu-uk.nexusbytes.ren-x.com
 eu-nl.nexusbytes.ren-x.com
 us-mia.buyvm.ren-x.com
-static.renegade-x.com
 us-lv.buyvm.renegade-x.com
 us-ny.buyvm.renegade-x.com
 eu-lux.buyvm.renegade-x.com
