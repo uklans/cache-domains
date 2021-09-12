@@ -39,11 +39,4 @@ configuration which can be utilised with:
 
 **This also applies to users utilising the script alongside Pi-hole.**
 
-If utilising the `create-dnsmasq.sh` the generation script will create a `lancache.conf` which also loads in the respective `*.hosts` files.
-
-The `lancache.conf` should be copied into the `/etc/dnsmasq.d/` location but also will need to be modified to point to the respective location of the `*.hosts` files.
-
-You can copy the `*.hosts` file to any location other than `/etc/dnsmasq.d/` as this location is utilised only for `*.conf` files.
-
-For example if utilising Pi-hole a user can copy the `*.hosts` files to `/etc/pihole/` and modify the `lancache.conf` with the following command, prior to copying it to `/etc/dnsmasq.d/`:
-`sed -i 's/dnsmasq\/hosts/pihole/g' output/dnsmasq/lancache.conf`
+Multi-IP Lancache setups are only supported with Dnsmasq or Pi-hole versions >= 2.86 or 2021.09 respectively.
