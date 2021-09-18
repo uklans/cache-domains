@@ -1,6 +1,7 @@
 #!/bin/bash
 basedir=".."
 outputdir="output/dnsmasq"
+outputfile="${outputdir}/lancache.conf"
 path="${basedir}/cache_domains.json"
 
 export IFS=' '
@@ -27,6 +28,7 @@ done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
 mkdir -p ${outputdir}
+touch ${outputfile}
 while read -r entry; do
         unset cacheip
         unset cachename
@@ -42,11 +44,8 @@ while read -r entry; do
         cacheip=$(jq -r 'if type == "array" then .[] else . end' <<< ${!cacheipname} | xargs)
         while read -r fileid; do
                 while read -r filename; do
-                        destfilename=$(echo $filename | sed -e 's/txt/conf/')
-                        outputfile=${outputdir}/${destfilename}
-                        touch ${outputfile}
                         while read -r fileentry; do
-                                # Ignore comments, newlines and wildcards
+                                # Ignore comments and newlines
                                 if [[ ${fileentry} == \#* ]] || [[ -z ${fileentry} ]]; then
                                         continue
                                 fi
@@ -65,6 +64,5 @@ done <<< $(jq -r '.cache_domains | to_entries[] | .key' ${path})
 cat << EOF
 Configuration generation completed.
 
-Please copy the following files:
-- ./${outputdir}/*.conf to /etc/dnsmasq/dnsmasq.d/
+Please copy ./${outputfile} to /etc/dnsmasq/dnsmasq.d/
 EOF
