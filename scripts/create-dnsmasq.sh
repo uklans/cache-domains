@@ -17,17 +17,16 @@ cachenamedefault="disabled"
 
 while read -r line; do
         ip=$(jq ".ips[\"${line}\"]" config.json)
-        declare "cacheip$line"="$ip"
+        declare "cacheip${line}"="${ip}"
 done <<< $(jq -r '.ips | to_entries[] | .key' config.json)
 
 while read -r line; do
         name=$(jq -r ".cache_domains[\"${line}\"]" config.json)
-        declare "cachename$line"="$name"
+        declare "cachename${line}"="${name}"
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
-mkdir -p ${outputdir}/hosts
-touch ${outputdir}/lancache.conf
+mkdir -p ${outputdir}
 while read -r entry; do
         unset cacheip
         unset cachename
@@ -43,47 +42,29 @@ while read -r entry; do
         cacheip=$(jq -r 'if type == "array" then .[] else . end' <<< ${!cacheipname} | xargs)
         while read -r fileid; do
                 while read -r filename; do
-                        destfilename=$(echo $filename | sed -e 's/txt/hosts/')
-                        lancacheconf=${outputdir}/lancache.conf
-                        outputfile=${outputdir}/hosts/${destfilename}
-                        echo "addn-hosts=/etc/dnsmasq/hosts/${destfilename}" >> ${lancacheconf}
-                        touch "$outputfile"
-                        # Wildcard entries
-                        while read -r fileentry; do
-                                # Ignore comments and non-wildcards
-                                if [[ $fileentry == \#* ]] || [[ ! $fileentry =~ ^\*\. ]]; then
-                                        continue
-                                fi
-                                wildcard=$(echo $fileentry | sed -e "s/^\*\.//")
-                                if grep -qx "$wildcard" "$lancacheconf"; then
-                                        continue
-                                fi
-                                for i in ${cacheip}; do
-                                        echo "address=/${wildcard}/${i}" >> "$lancacheconf"
-                                done
-                        done <<< $(cat ${basedir}/$filename | sort);
-                        # All other entries
+                        destfilename=$(echo $filename | sed -e 's/txt/conf/')
+                        outputfile=${outputdir}/${destfilename}
+                        touch ${outputfile}
                         while read -r fileentry; do
                                 # Ignore comments, newlines and wildcards
-                                if [[ $fileentry =~ ^(\#|\*\.) ]] || [[ -z $fileentry ]]; then
+                                if [[ ${fileentry} == \#* ]] || [[ -z ${fileentry} ]]; then
                                         continue
                                 fi
-                                parsed=$(echo $fileentry)
-                                if grep -qx "$parsed" "$outputfile"; then
-                                        continue
-                                fi
+                                parsed=$(echo ${fileentry} | sed -e "s/^\*\.//")
                                 for i in ${cacheip}; do
-                                        echo "${i} ${parsed}" >> "$outputfile"
+                                        if grep -qx "address=/${parsed}/${i}" "${outputfile}"; then
+                                                continue
+                                        fi
+                                        echo "address=/${parsed}/${i}" >> "${outputfile}"
                                 done
-                        done <<< $(cat ${basedir}/$filename | sort);
-                done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
-        done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
-done <<< $(jq -r '.cache_domains | to_entries[] | .key' $path)
+                        done <<< $(cat ${basedir}/${filename} | sort);
+                done <<< $(jq -r ".cache_domains[${entry}].domain_files[$fileid]" ${path})
+        done <<< $(jq -r ".cache_domains[${entry}].domain_files | to_entries[] | .key" ${path})
+done <<< $(jq -r '.cache_domains | to_entries[] | .key' ${path})
 
 cat << EOF
 Configuration generation completed.
 
 Please copy the following files:
-- ./${outputdir}/lancache.conf to /etc/dnsmasq/dnsmasq.d/
-- ./${outputdir}/hosts to /etc/dnsmasq/
+- ./${outputdir}/*.conf to /etc/dnsmasq/dnsmasq.d/
 EOF
