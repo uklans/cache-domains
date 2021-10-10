@@ -47,9 +47,13 @@ while read -r entry; do
                                 parsed=$(echo ${fileentry} | sed -e "s/^\*\./\./")
 				# If we have cdn.thing and *.cdn.thing in cache_domains
 				# Squid requires ONLY cdn.thing
+				#
+				# If the fileentry starts with *.cdn.thing
 				if [[ ${fileentry} =~ $REGEX ]]; then
+					# Does the cache_domains file also contain cdn.thing
 					grep "${BASH_REMATCH[1]}" ${basedir}/${filename} | grep -v "${fileentry}" > /dev/null
 					if [[ $? -eq 0 ]]; then
+						# Skip *.cdn.thing as cdn.thing will be collected earlier/later
 						continue
 					fi
 				fi
