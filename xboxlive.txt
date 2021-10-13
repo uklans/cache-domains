@@ -8,4 +8,3 @@ xbox-mbr.xboxlive.com
 assets1.xboxlive.com.nsatc.net
 xvcf1.xboxlive.com
 d1.xboxlive.com
-
