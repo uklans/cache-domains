@@ -2,6 +2,7 @@
 basedir=".."
 outputdir="output/rpz"
 path="${basedir}/cache_domains.json"
+basedomain=${1:-lancache.net}
 
 export IFS=' '
 
@@ -27,19 +28,19 @@ done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
 mkdir -p ${outputdir}
-outputfile=${outputdir}/db.rpz.lancache.net
+outputfile=${outputdir}/db.rpz.$basedomain
 cat > $outputfile << EOF
 \$TTL 60 ; default TTL
-\$ORIGIN rpz.lancache.net.
-@       SOA     ns1.lancache.net. admin.lancache.net. (
+\$ORIGIN rpz.$basedomain.
+@       SOA     ns1.$basedomain. admin.$basedomain. (
 		$(date +%Y%m%d01) ; serial
                 604800     ; refresh (1 week)
                 86400      ; retry (1 day)
                 2419200    ; expire (4 weeks)
                 86400      ; minimum (1 day)
                 )
-        NS      ns1.lancache.net.
-        NS      ns2.lancache.net.
+        NS      ns1.$basedomain.
+        NS      ns2.$basedomain.
 
 EOF
 
@@ -103,11 +104,11 @@ Please include the rpz zone in your bind configuration"
 
 options {
     [...]
-    response-policy {zone "rpz.lancache.net";};
+    response-policy {zone "rpz.$basedomain";};
     [...]
 }
-zone "rpz.lancache.net" {
+zone "rpz.$basedomain" {
     type master;
-    file "/etc/bind/db.rpz.lancache.net";
+    file "/etc/bind/db.rpz.$basedomain";
 };
 EOF
