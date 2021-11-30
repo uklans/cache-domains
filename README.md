@@ -53,7 +53,7 @@ The wildcard format shall be defined as per the below
 
 ##### Notes for Squid users
 
-If you are using these files within a squid dst_domain acl you will need to reformat the wildcard entries to be compliant with the squid acl format. The following regex should suffice `s/*\./\./`
+If you are using these files within a squid dst_domain acl you will need to reformat the wildcard entries to be compliant with the squid acl format. The following regex should suffice `s/*\./\./` however latest versions of squid are very particular about duplicate domains. The scripts/create-squid.sh should help you out here!
 
 ## Updates
 
