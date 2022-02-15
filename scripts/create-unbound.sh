@@ -50,14 +50,16 @@ while read entry; do
 			destfilename=$(echo $filename | sed -e 's/txt/conf/')
 			outputfile=${outputdir}/${destfilename}
 			touch $outputfile
-
-			echo 'forward-zone:' > $outputfile
-			echo "  name: \"${key}.cache.lancache.net.\"" >> $outputfile
-			for i in ${cacheip}; do
-				echo "  forward-addr: \"${i}\"" >> $outputfile
-			done
-			echo "  forward-first: yes" >> $outputfile
-			echo "  forward-no-cache: yes" >> $outputfile
+			
+			if $forward; then
+				echo 'forward-zone:' > $outputfile
+				echo "  name: \"${key}.cache.lancache.net.\"" >> $outputfile
+				for i in ${cacheip}; do
+					echo "  forward-addr: \"${i}\"" >> $outputfile
+				done
+				echo "  forward-first: yes" >> $outputfile
+				echo "  forward-no-cache: yes" >> $outputfile
+			fi
 
 			while read fileentry; do
 				# Ignore comments and newlines
