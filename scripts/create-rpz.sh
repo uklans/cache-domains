@@ -35,9 +35,9 @@ cat > $outputfile << EOF
 @       SOA     ns1.$basedomain. admin.$basedomain. (
 		$(date +%Y%m%d01) ; serial
                 604800     ; refresh (1 week)
-                86400      ; retry (1 day)
-                2419200    ; expire (4 weeks)
-                86400      ; minimum (1 day)
+                600      ; retry (1 day)
+                600    ; expire (4 weeks)
+                600      ; minimum (1 day)
                 )
         NS      ns1.$basedomain.
         NS      ns2.$basedomain.
