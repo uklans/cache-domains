@@ -35,5 +35,4 @@ dl.castle.freefiremobile.com.akamaized.net
 *.akamai.net
 *.edgesuite.net
 *.fivem.net
-*.discordapp.net
 s.gameloop.fun
