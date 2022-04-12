@@ -123,11 +123,6 @@
 			"domain_files": ["windowsupdates.txt"]
 		},
 		{
-			"name": "gameloop",
-			"description": "CDN for gameloop updates",
-			"domain_files": ["gameloop.txt"]
-		},
-		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
