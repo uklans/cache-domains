@@ -24,8 +24,6 @@ guanjia.qq.com
 gameloop.mobi
 filecdn.igamecj.com
 file.igamecj.com
-s2.symcb.com
-sv.symcb.com
 *.symcb.com
 freefiremobile-a.akamaihd.net.edgesuite.net
 a1038.d.akamai.net
