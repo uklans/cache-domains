@@ -121,6 +121,11 @@
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
+		},
+		{
+			"name": "Esper",
+			"description": "CDN for Esper device provisioning",
+			"domain_files": ["esper.txt"]
 		}
 	]
 }
