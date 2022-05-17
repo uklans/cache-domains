@@ -1,1 +1,2 @@
 develop-streamer.esper.io
+scapi-sharedorgn2-static-and-media-files.s3.amazonaws.com
