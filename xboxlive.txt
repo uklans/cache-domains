@@ -1,8 +1,5 @@
 assets1.xboxlive.com
 assets2.xboxlive.com
-xboxone.loris.llnwd.net
-*.xboxone.loris.llnwd.net
-xboxone.vo.llnwd.net
 xbox-mbr.xboxlive.com
 assets1.xboxlive.com.nsatc.net
 xvcf1.xboxlive.com

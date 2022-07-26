@@ -36,11 +36,6 @@
 			"domain_files": ["frontier.txt"]
 		},
 		{
-			"name": "hirez",
-			"description": "CDN for hirez",
-			"domain_files": ["hirez.txt"]
-		},
-		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
 			"domain_files": ["nexusmods.txt"]

@@ -1,6 +1,5 @@
 us-chi2.cncirc.net
 us-lv2.cncirc.net
-eu-ger.hetzner.ctgamehosts.uk
 us-nj.shockhosting.ctgamehosts.uk
 us-va.ovh.ctgamehosts.uk
 rxp-de1.ts3-server.ch

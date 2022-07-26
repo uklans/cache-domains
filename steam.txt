@@ -33,7 +33,7 @@ edge.steam-dns-2.top.comcast.net
 steam.naeu.qtlglb.com
 steampipe-kr.akamaized.net
 steam.ix.asn.au
-steam.eca.qtlglb.com 
+steam.eca.qtlglb.com
 steam.cdn.on.net
 update5.dota2.wmsj.cn
 update2.dota2.wmsj.cn
