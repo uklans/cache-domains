@@ -6,11 +6,6 @@
 			"domain_files": ["arenanet.txt"]
 		},
 		{
-			"name": "adobe",
-			"description": "Adobe Updates",
-			"domain_files": ["adobe.txt"]
-		},
-		{
 			"name": "blizzard",
 			"description": "CDN for blizzard/battle.net",
 			"domain_files": ["blizzard.txt"]
@@ -39,11 +34,6 @@
 			"name": "frontier",
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
-		},
-		{
-			"name": "google",
-			"description": "Chrome and Google Updates",
-			"domain_files": ["google.txt"]
 		},
 		{
 			"name": "nexusmods",
