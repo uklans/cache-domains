@@ -1,2 +1,0 @@
-dl.google.com
-*.gvt1.com
