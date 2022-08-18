@@ -1,5 +1,6 @@
 {
 	"ips": {
+		"adguardhome_upstream": ["94.140.14.140", "tls://dns.google", "https://dns.google/dns-query"],
 		"steam":	["10.10.3.10", "10.10.3.11"],
 		"origin":	"10.10.3.12",
 		"blizzard":	"10.10.3.13",
