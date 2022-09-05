@@ -35,6 +35,11 @@
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
 		},
+                {
+                        "name": "mobilelegends",
+                        "description": "CDN for Mobile Legends",
+                        "domain_files": ["mobilelegends.txt"]
+                },
 		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
