@@ -62,6 +62,11 @@
 			"description": "CDN for Path Of Exile",
 			"domain_files": ["pathofexile.txt"]
 		},
+                {
+                        "name": "pubgmobile",
+                        "description": "CDN for PUBG Mobile",
+                        "domain_files": ["pubgmobile.txt"]
+                },
 		{
 			"name": "renegadex",
 			"description": "CDN for Renegade X",
