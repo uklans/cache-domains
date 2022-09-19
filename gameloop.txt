@@ -1,5 +1,3 @@
-ocsp.digicert.cn
-ocsp.digicert.com
 masterconn.qq.com
 *.qq.com
 wup.imtt.qq.com
