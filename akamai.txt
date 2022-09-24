@@ -1,1 +1,4 @@
 *deploy.static.akamaitechnologies.com
+a1038.d.akamai.net
+a1974.dscd.akamai.net
+*.akamai.net

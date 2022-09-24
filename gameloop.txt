@@ -24,11 +24,8 @@ filecdn.igamecj.com
 file.igamecj.com
 *.symcb.com
 freefiremobile-a.akamaihd.net.edgesuite.net
-a1038.d.akamai.net
-a1974.dscd.akamai.net
 dl.castle.freefiremobile.com.akamaized.net
 *.tencent-cloud.net
-*.akamai.net
 *.edgesuite.net
 *.fivem.net
 s.gameloop.fun
