@@ -6,6 +6,11 @@
 			"domain_files": ["arenanet.txt"]
 		},
 		{
+			"name": "akamai",
+			"description": "CDN for Akamai",
+			"domain_files": ["akamai.txt"]
+		},
+		{
 			"name": "blizzard",
 			"description": "CDN for blizzard/battle.net",
 			"domain_files": ["blizzard.txt"]
