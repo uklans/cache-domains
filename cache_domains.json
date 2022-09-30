@@ -11,6 +11,11 @@
 			"domain_files": ["akamai.txt"]
 		},
 		{
+			"name": "mobilelegends",
+			"description": "CDN for Mobile Legends",
+			"domain_files": ["mobilelegends.txt"]
+		},
+		{
 			"name": "blizzard",
 			"description": "CDN for blizzard/battle.net",
 			"domain_files": ["blizzard.txt"]
