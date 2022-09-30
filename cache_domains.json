@@ -123,6 +123,16 @@
 			"domain_files": ["wargaming.net.txt"]
 		},
 		{
+			"name": "gameloop",
+			"description": "CDN for gameloop",
+			"domain_files": ["gameloop.txt"]
+		},
+		{
+			"name": "pubg",
+			"description": "CDN for Pubg",
+			"domain_files": ["pubg.txt"]
+		},
+		{
 			"name": "wsus",
 			"description": "CDN for windows updates",
 			"domain_files": ["windowsupdates.txt"]
