@@ -103,6 +103,11 @@
 			"domain_files": ["teso.txt"]
 		},
 		{
+			"name": "gameloop",
+			"description": "CDN for gameloop",
+			"domain_files": ["gameloop.txt"]
+		},
+		{
 			"name": "warframe",
 			"description": "CDN for Warframe",
 			"domain_files": ["warframe.txt"]
