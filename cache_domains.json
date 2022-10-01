@@ -108,11 +108,6 @@
 			"domain_files": ["warframe.txt"]
 		},
                 {
-			"name": "gameloop",
-			"description": "CDN for gameloop",
-			"domain_files": ["gameloop.txt"]
-		},
-		{
 			"name": "wargaming",
 			"description": "CDN for wargaming.net",
 			"domain_files": ["wargaming.net.txt"]
