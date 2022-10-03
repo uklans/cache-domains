@@ -29,3 +29,7 @@ dl.castle.freefiremobile.com.akamaized.net
 *.edgesuite.net
 *.fivem.net
 s.gameloop.fun
+pubgmpdrcdn.intlgame.com
+k.gjacky.com.cdn.ettdnsv.com
+k.gjacky.com.akamaized.net
+pubgmpdrcdn.intlgame.com.edgesuite.net
