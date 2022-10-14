@@ -2,4 +2,5 @@ develop-streamer.esper.io
 scapi-sharedorgn2-static-and-media-files.s3.amazonaws.com
 hingedpc.s3.us-west-2.amazonaws.com
 scapi-esperhinge-static-and-media-files.s3.amazonaws.com
-
+scapi-sharedorgn4-static-and-media-files.s3.amazonaws.com
+testotaapp.s3.us-east-2.amazonaws.com 
