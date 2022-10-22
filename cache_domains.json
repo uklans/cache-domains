@@ -26,6 +26,11 @@
 			"domain_files": ["daybreak.txt"]
 		},
 		{
+			"name": "debian",
+			"description": "Debian based repositories",
+			"domain_files": ["debian.txt"]
+		},
+		{
 			"name": "epicgames",
 			"description": "CDN for Epic Games",
 			"domain_files": ["epicgames.txt"]
