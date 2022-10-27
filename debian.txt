@@ -1,7 +1,6 @@
 deb.debian.org
 ftp.debian.org
 packages.deepin.com
-security.debian.org
 http.kali.org
 packages.linuxmint.com
 apt.pop-os.org
