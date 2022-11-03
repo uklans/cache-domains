@@ -1,0 +1,3 @@
+geo.mirror.pkgbuild.com
+mirror.rackspace.com
+mirrors.kernel.org
