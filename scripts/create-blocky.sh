@@ -83,6 +83,6 @@ cat << EOF
 Configuration generation completed.
 
 Please copy output/blocky/custom_dns.yml to your blocky config directory, or integrate
-it into your mail config.yml
+it into your main config.yml
 
 EOF
