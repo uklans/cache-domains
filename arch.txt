@@ -1,4 +1,3 @@
-# Sorted lexicographically in ascending order
 arch.hu.fo
 arch.jensgutermuth.de
 arch.kyberorg.fi
@@ -64,7 +63,7 @@ archlinux.zepto.cloud
 archmirror.hbit.sztaki.hu
 archmirror1.octyl.net
 arlm.tyzoid.com
-artfiles.orglinux.org
+artfiles.org
 br.mirror.archlinux-br.org
 ca.us.mirror.archlinux-br.org
 codingflyboy.mm.fcix.net
@@ -76,18 +75,18 @@ f.archlinuxvn.org
 fastmirror.pp.ua
 forksystems.mm.fcix.net
 free.nchc.org.tw
-ftp-stud.hs-esslingen.des
+ftp-stud.hs-esslingen.de
 ftp.acc.umu.se
-ftp.agdsn.des
+ftp.agdsn.de
 ftp.byfly.by
-ftp.cc.uoc.grs
-ftp.ek-cer.hus
+ftp.cc.uoc.gr
+ftp.ek-cer.hu
 ftp.fau.de
 ftp.fi.muni.cz
 ftp.gwdg.de
 ftp.halifax.rwth-aachen.de
 ftp.harukasan.org
-ftp.heanet.ies
+ftp.heanet.ie
 ftp.hosteurope.de
 ftp.icm.edu.pl
 ftp.iinet.net.au
@@ -106,7 +105,7 @@ ftp.rediris.es
 ftp.rnl.tecnico.ulisboa.pt
 ftp.sh.cvut.cz
 ftp.snt.utwente.nl
-ftp.spline.inf.fu-berlin.des
+ftp.spline.inf.fu-berlin.de
 ftp.sudhip.com
 ftp.swin.edu.au
 ftp.tku.edu.tw
@@ -151,7 +150,7 @@ mirror.archlinux.cl
 mirror.archlinux.ikoula.com
 mirror.archlinux.no
 mirror.archlinux.tw
-mirror.arctic.lolMirror
+mirror.arctic.lol
 mirror.arizona.edu
 mirror.arvancloud.com
 mirror.bardia.tech
@@ -208,7 +207,7 @@ mirror.ihost.md
 mirror.informatik.tu-freiberg.de
 mirror.init7.net
 mirror.internode.on.net
-mirror.is.co.zalinux.org
+mirror.is.co.za
 mirror.isoc.org.il
 mirror.its.dal.ca
 mirror.jingk.ai
@@ -247,7 +246,7 @@ mirror.neuf.no
 mirror.nw-sys.ru
 mirror.oldsql.cc
 mirror.one.com
-mirror.onet.pls
+mirror.onet.pl
 mirror.onevip.mk
 mirror.orbit-os.com
 mirror.pagenotfound.de
@@ -337,7 +336,7 @@ mirrors.kernel.org
 mirrors.liquidweb.com
 mirrors.lug.mtu.edu
 mirrors.m247.ro
-mirrors.manchester.m247.com-linux
+mirrors.manchester.m247.com
 mirrors.melbourne.co.uk
 mirrors.mit.edu
 mirrors.myaegean.gr
@@ -349,10 +348,10 @@ mirrors.nic.cz
 mirrors.nix.org.ua
 mirrors.niyawe.de
 mirrors.nju.edu.cn
-mirrors.nxtgen.comlinux-mirror
+mirrors.nxtgen.com
 mirrors.nxthost.com
 mirrors.ocf.berkeley.edu
-mirrors.piconets.webwerks.inlinux-mirror
+mirrors.piconets.webwerks.in
 mirrors.pidginhost.com
 mirrors.powernet.com.ru
 mirrors.prometeus.net
@@ -381,16 +380,16 @@ mirrors.xtom.nl
 mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
 muug.ca
-nova.quantum-mirror.hus
+nova.quantum-mirror.hu
 ord.mirror.rackspace.com
 os.codefionn.eu
 ossmirror.mycloud.services
 packages.oth-regensburg.de
 phinau.de
-piotrkosoft.nets
+piotrkosoft.net
 pkg.adfinis.com
 plug-mirror.rcac.purdue.edu
-quantum-mirror.hus
+quantum-mirror.hu
 repo.endpoint.ml
 repo.ialab.dsu.edu
 repo.inara.pk
@@ -398,7 +397,7 @@ repo.iut.ac.ir
 repo.miserver.it.umich.edu
 repo.skni.umcs.pl
 ridgewireless.mm.fcix.net
-super.quantum-mirror.hus
+super.quantum-mirror.hu
 suro.ubaya.ac.id
 syd.mirror.rackspace.com
 tux.rainside.sk
