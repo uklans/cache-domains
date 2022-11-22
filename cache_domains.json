@@ -1,174 +1,188 @@
 {
-    cache_domains: [
+    "cache_domains": [
         {
-    name: "arenanet",
-    description: "CDN for guild wars, HoT",
-    domain_files: [
+            "description": "CDN for guild wars, HoT",
+            "domain_files": [
                 "arenanet.txt"
-            ]
+            ],
+            "name": "arenanet"
         },
         {
-    name: "blizzard",
-    description: "CDN for blizzard/battle.net",
-    domain_files: [
+            "description": "CDN for Akamai",
+            "domain_files": [
+                "akamai.txt"
+            ],
+            "name": "akamai"
+        },
+        {
+            "description": "CDN for blizzard/battle.net",
+            "domain_files": [
                 "blizzard.txt"
-            ]
+            ],
+            "name": "blizzard"
         },
         {
-    name: "bsg",
-    description: "CDN for Battle State Games, Tarkov",
-    domain_files: [
+            "description": "CDN for Battle State Games, Tarkov",
+            "domain_files": [
                 "bsg.txt"
-            ]
+            ],
+            "name": "bsg"
         },
         {
-    name: "cityofheroes",
-    description: "CDN for City of Heroes (Homecoming)",
-    domain_files: [
+            "description": "CDN for City of Heroes (Homecoming)",
+            "domain_files": [
                 "cityofheroes.txt"
-            ]
+            ],
+            "name": "cityofheroes"
         },
         {
-    name: "daybreak",
-    description: "Daybreak games CDN",
-    domain_files: [
+            "description": "Daybreak games CDN",
+            "domain_files": [
                 "daybreak.txt"
-            ]
+            ],
+            "name": "daybreak"
         },
         {
-    name: "epicgames",
-    description: "CDN for Epic Games",
-    domain_files: [
+            "description": "CDN for Epic Games",
+            "domain_files": [
                 "epicgames.txt"
-            ]
+            ],
+            "name": "epicgames"
         },
         {
-    name: "frontier",
-    description: "CDN for frontier games",
-    domain_files: [
+            "description": "CDN for frontier games",
+            "domain_files": [
                 "frontier.txt"
-            ]
+            ],
+            "name": "frontier"
         },
         {
-    name: "nexusmods",
-    description: "Nexus mods / skyrim content",
-    domain_files: [
+            "description": "Nexus mods / skyrim content",
+            "domain_files": [
                 "nexusmods.txt"
-            ]
+            ],
+            "name": "nexusmods"
         },
         {
-    name: "neverwinter",
-    description: "Cryptic CDN for Neverwinter",
-    domain_files: [
+            "description": "Cryptic CDN for Neverwinter",
+            "domain_files": [
                 "neverwinter.txt"
-            ]
+            ],
+            "name": "neverwinter"
         },
         {
-    name: "nintendo",
-    description: "CDN for Nintendo consoles and download servers",
-    domain_files: [
+            "description": "CDN for Nintendo consoles and download servers",
+            "domain_files": [
                 "nintendo.txt"
-            ]
+            ],
+            "name": "nintendo"
         },
         {
-    name: "origin",
-    description: "CDN for origin",
-    notes: "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
-    mixed_content: true,
-    domain_files: [
+            "description": "CDN for origin",
+            "domain_files": [
                 "origin.txt"
-            ]
+            ],
+            "mixed_content": true,
+            "name": "origin",
+            "notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails"
         },
         {
-    name: "pathofexile",
-    description: "CDN for Path Of Exile",
-    domain_files: [
+            "description": "CDN for Path Of Exile",
+            "domain_files": [
                 "pathofexile.txt"
-            ]
+            ],
+            "name": "pathofexile"
         },
         {
-    name: "renegadex",
-    description: "CDN for Renegade X",
-    domain_files: [
+            "description": "CDN for Renegade X",
+            "domain_files": [
                 "renegadex.txt"
-            ]
+            ],
+            "name": "renegadex"
         },
         {
-    name: "riot",
-    description: "CDN for riot games",
-    domain_files: [
+            "description": "CDN for riot games",
+            "domain_files": [
                 "riot.txt"
-            ]
+            ],
+            "name": "riot"
         },
         {
-    name: "rockstar",
-    description: "CDN for rockstar games",
-    domain_files: [
+            "description": "CDN for rockstar games",
+            "domain_files": [
                 "rockstar.txt"
-            ]
+            ],
+            "name": "rockstar"
         },
         {
-    name: "sony",
-    description: "CDN for sony / playstation",
-    domain_files: [
+            "description": "CDN for sony / playstation",
+            "domain_files": [
                 "sony.txt"
-            ]
+            ],
+            "name": "sony"
         },
         {
-    name: "square",
-    description: "CDN for Final Fantasy XIV",
-    domain_files: [
+            "description": "CDN for Final Fantasy XIV",
+            "domain_files": [
                 "square.txt"
-            ]
+            ],
+            "name": "square"
         },
         {
-    name: "steam",
-    description: "CDN for steam platform",
-    domain_files: [
+            "description": "CDN for steam platform",
+            "domain_files": [
                 "steam.txt"
-            ]
+            ],
+            "name": "steam"
         },
         {
-    name: "uplay",
-    description: "CDN for uplay downloader",
-    domain_files: [
+            "description": "CDN for uplay downloader",
+            "domain_files": [
                 "uplay.txt"
-            ]
+            ],
+            "name": "uplay"
         },
         {
-    name: "teso",
-    description: "CDN for The Elder Scrolls Online",
-    domain_files: [
+            "description": "CDN for The Elder Scrolls Online",
+            "domain_files": [
                 "teso.txt"
-            ]
+            ],
+            "name": "teso"
         },
         {
-    name: "warframe",
-    description: "CDN for Warframe",
-    domain_files: [
+            "description": "CDN for gameloop",
+            "domain_files": [
+                "gameloop.txt"
+            ],
+            "name": "gameloop"
+        },
+        {
+            "description": "CDN for Warframe",
+            "domain_files": [
                 "warframe.txt"
-            ]
+            ],
+            "name": "warframe"
         },
         {
-    name: "wargaming",
-    description: "CDN for wargaming.net",
-    domain_files: [
+            "description": "CDN for wargaming.net",
+            "domain_files": [
                 "wargaming.net.txt"
-            ]
+            ],
+            "name": "wargaming"
         },
         {
-    name: "wsus",
-    description: "CDN for windows updates",
-    domain_files: [
+            "description": "CDN for windows updates",
+            "domain_files": [
                 "windowsupdates.txt"
-            ]
+            ],
+            "name": "wsus"
         },
         {
-    name: "xboxlive",
-    description: "CDN for xboxlive",
-    domain_files: [
+            "description": "CDN for xboxlive",
+            "domain_files": [
                 "xboxlive.txt"
-            ]
+            ],
+            "name": "xboxlive"
         }
     ]
 }
