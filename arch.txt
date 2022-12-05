@@ -61,6 +61,7 @@ archlinux.uk.mirror.allworldit.com
 archlinux.za.mirror.allworldit.com
 archlinux.zepto.cloud
 archmirror.hbit.sztaki.hu
+archmirror.xyz
 archmirror1.octyl.net
 arlm.tyzoid.com
 artfiles.org
@@ -132,6 +133,7 @@ linorg.usp.br
 linux.rz.rub.de
 lon.mirror.rackspace.com
 lysakermoen.com
+md.mirrors.hacktegic.com
 mir.archlinux.fr
 mirroir.labhouse.fr
 mirroir.wptheme.fr
@@ -209,6 +211,7 @@ mirror.init7.net
 mirror.internode.on.net
 mirror.is.co.za
 mirror.isoc.org.il
+mirror.it4i.cz
 mirror.its.dal.ca
 mirror.jingk.ai
 mirror.jordanrey.me
@@ -275,6 +278,7 @@ mirror.sfo12.us.leaseweb.net
 mirror.sg.gs
 mirror.siena.edu
 mirror.smith.geek.nz
+mirror.spazioincloud.it
 mirror.stephen304.com
 mirror.surf
 mirror.system.is
