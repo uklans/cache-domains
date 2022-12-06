@@ -16,7 +16,7 @@ jobs:
 
       - name: Generate Arch Mirror List
         id: generate
-        run: curl -L https://www.archlinux.org/mirrorlist/all/http | grep -oP 'https?://\K[^/]*' | sort -u >arch.txt
+        run: curl -L https://www.archlinux.org/mirrorlist/all/http | grep -oP 'https?://\K[^/]*' | sed "s/:.*//g" | sort -u >arch.txt
 
       - name: Get current date
         id: date
