@@ -36,6 +36,12 @@ There are several reasons why a particular service / CDN / website might not be 
 
 It does not allow https / SSL content to be inspected or cached. Hostnames that serve all or almost all https traffic are still unlikely to be good candidates for this list, as it just places load on the cache box but does not save any internet bandwidth.
 
+## Why is there a Steam Failback list?
+
+The preferred option for Steam is to use a single DNS entry, `lancache.steamcontent.com` pointing to your RFC 1918 cache IP. This will make the Steam client switch to HTTP-only and send all requests via your cache server. However - if it encounters an issue, it will stop using the cache server and go directly to the Steam Content servers for a few minutes.
+
+This CDN entry contains the hostnames for Steam content servers to provide an easy way to still intercept Steam downloads while it's attempting to go directly to the content servers. However - Steam may not downgrade the connection to HTTP, so instead the content downloads will be passed through and not cached.
+
 ## How can I test an addition to this list?
 
 If you are using the lancachenet project, you can fork this repo, add your test hostnames and then use [these instructions](https://github.com/lancachenet/lancache-dns#custom-forksbranches) to use it with your cache instance rather than the main repo.

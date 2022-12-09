@@ -121,6 +121,11 @@
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
+		},
+		{
+			"name": "steamfailback",
+			"description": "Hostnames for Steam - to be used when you want to failback to DNS poisoning",
+			"domain_files": ["steamfailback.txt"]
 		}
 	]
 }
