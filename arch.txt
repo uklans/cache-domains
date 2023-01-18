@@ -18,7 +18,6 @@ arch.softver.org.mk
 arch.yhtez.xyz
 arch.yourlabs.org
 archimonde.ts.si
-archlinux-br.com.br
 archlinux.astra.in.ua
 archlinux.c3sl.ufpr.br
 archlinux.ccns.ncku.edu.tw
@@ -81,7 +80,6 @@ ftp.acc.umu.se
 ftp.agdsn.de
 ftp.byfly.by
 ftp.cc.uoc.gr
-ftp.ek-cer.hu
 ftp.fau.de
 ftp.fi.muni.cz
 ftp.gwdg.de
