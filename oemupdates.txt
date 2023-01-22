@@ -1,0 +1,9 @@
+global-download.acer.com
+dlcdnets.asus.com
+dl.dell.com
+content.us.dynabook.com
+download.gigabyte.com
+ftp.ext.hp.com
+consumer-tkbdownload.huawei.com
+download.lenovo.com
+download.msi.com
