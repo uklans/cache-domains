@@ -278,6 +278,8 @@ mirror.siena.edu
 mirror.smith.geek.nz
 mirror.spazioincloud.it
 mirror.stephen304.com
+mirror.stjschools.org
+mirror.sunred.org
 mirror.surf
 mirror.system.is
 mirror.t-home.mk
@@ -307,7 +309,7 @@ mirror.xenyth.net
 mirror.xeonbd.com
 mirror.xtom.com.hk
 mirror.yandex.ru
-mirror1.cl.netactuate.com
+mirror.yer.az
 mirror2.evolution-host.com
 mirror2.totbb.net
 mirrors.163.com
