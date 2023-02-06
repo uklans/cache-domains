@@ -1,1 +1,2 @@
 *.borland.com
+speedtest.tele2.net
