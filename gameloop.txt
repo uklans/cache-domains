@@ -25,7 +25,6 @@ file.igamecj.com
 freefiremobile-a.akamaihd.net.edgesuite.net
 dl.castle.freefiremobile.com.akamaized.net
 *.tencent-cloud.net
-*.edgesuite.net
 *.fivem.net
 s.gameloop.fun
 pubgmpdrcdn.intlgame.com
