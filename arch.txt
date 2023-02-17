@@ -178,6 +178,7 @@ mirror.dal10.us.leaseweb.net
 mirror.datacenter.by
 mirror.dc.uz
 mirror.digitalnova.at
+mirror.ditatompel.com
 mirror.dkm.cz
 mirror.easyname.at
 mirror.efect.ro
@@ -204,6 +205,7 @@ mirror.hostup.org
 mirror.i3d.net
 mirror.ibcp.fr
 mirror.ihost.md
+mirror.infernocomms.net
 mirror.informatik.tu-freiberg.de
 mirror.init7.net
 mirror.internode.on.net
@@ -396,7 +398,6 @@ plug-mirror.rcac.purdue.edu
 quantum-mirror.hu
 repo.endpoint.ml
 repo.ialab.dsu.edu
-repo.inara.pk
 repo.iut.ac.ir
 repo.miserver.it.umich.edu
 repo.skni.umcs.pl
