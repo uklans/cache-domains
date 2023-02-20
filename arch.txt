@@ -71,6 +71,7 @@ coresite.mm.fcix.net
 depo.turkiye.linux.web.tr
 dfw.mirror.rackspace.com
 distro.ibiblio.org
+edgeuno-bog2.mm.fcix.net
 f.archlinuxvn.org
 fastmirror.pp.ua
 forksystems.mm.fcix.net
@@ -120,6 +121,7 @@ ftp.yzu.edu.tw
 ftpmirror.infania.net
 glua.ua.pt
 gluttony.sin.cvut.cz
+gsl-syd.mm.fcix.net
 hkg.mirror.rackspace.com
 iad.mirror.rackspace.com
 iad.mirrors.misaka.one
@@ -386,6 +388,7 @@ mirrors.xtom.nl
 mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
 muug.ca
+nnenix.mm.fcix.net
 nova.quantum-mirror.hu
 ord.mirror.rackspace.com
 os.codefionn.eu
@@ -402,6 +405,7 @@ repo.iut.ac.ir
 repo.miserver.it.umich.edu
 repo.skni.umcs.pl
 ridgewireless.mm.fcix.net
+southfront.mm.fcix.net
 super.quantum-mirror.hu
 suro.ubaya.ac.id
 syd.mirror.rackspace.com
