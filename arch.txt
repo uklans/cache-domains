@@ -24,7 +24,6 @@ archlinux.ccns.ncku.edu.tw
 archlinux.cs.nycu.edu.tw
 archlinux.cu.be
 archlinux.datagr.am
-archlinux.de-labrusse.fr
 archlinux.grena.ge
 archlinux.honkgong.info
 archlinux.interhost.co.il
@@ -45,7 +44,6 @@ archlinux.mirror.pcextreme.nl
 archlinux.mirror.py
 archlinux.mirror.rafal.ca
 archlinux.mirror.root.lu
-archlinux.mirror.server24.net
 archlinux.mirror.wearetriple.com
 archlinux.mirrors.benatherton.com
 archlinux.mirrors.linux.ro
@@ -143,6 +141,7 @@ mirror.0x.sg
 mirror.0xem.ma
 mirror.23m.com
 mirror.2degrees.nz
+mirror.5i.fi
 mirror.aktkn.sg
 mirror.alwyzon.net
 mirror.ams1.nl.leaseweb.net
@@ -162,7 +161,6 @@ mirror.cc.columbia.edu
 mirror.cedia.org.ec
 mirror.cedille.club
 mirror.chaoticum.net
-mirror.checkdomain.de
 mirror.cj2.nl
 mirror.clarkson.edu
 mirror.clientvps.com
@@ -264,8 +262,8 @@ mirror.powerfly.ca
 mirror.premi.st
 mirror.ps.kz
 mirror.puzzle.ch
+mirror.quantum5.ca
 mirror.rackspace.com
-mirror.rasanegar.com
 mirror.redrock.team
 mirror.reisenbauer.ee
 mirror.repository.id
@@ -280,7 +278,6 @@ mirror.sfo12.us.leaseweb.net
 mirror.sg.gs
 mirror.siena.edu
 mirror.smith.geek.nz
-mirror.spazioincloud.it
 mirror.stephen304.com
 mirror.stjschools.org
 mirror.sunred.org
@@ -345,6 +342,7 @@ mirrors.liquidweb.com
 mirrors.lug.mtu.edu
 mirrors.m247.ro
 mirrors.manchester.m247.com
+mirrors.marquitos.space
 mirrors.melbourne.co.uk
 mirrors.mit.edu
 mirrors.myaegean.gr
@@ -362,7 +360,6 @@ mirrors.ocf.berkeley.edu
 mirrors.piconets.webwerks.in
 mirrors.pidginhost.com
 mirrors.powernet.com.ru
-mirrors.prometeus.net
 mirrors.radwebhosting.com
 mirrors.rit.edu
 mirrors.rutgers.edu
