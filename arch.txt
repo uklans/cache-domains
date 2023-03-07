@@ -224,6 +224,7 @@ mirror.kumi.systems
 mirror.labkom.id
 mirror.lagoon.nc
 mirror.lastmikoi.net
+mirror.lcarilla.de
 mirror.lebedinets.ru
 mirror.librelabucm.org
 mirror.lnx.sk
