@@ -199,6 +199,7 @@ mirror.gi.co.id
 mirror.guillaumea.fr
 mirror.hackingand.coffee
 mirror.host.ag
+mirror.hostart.az
 mirror.hoster.kz
 mirror.hosthink.net
 mirror.hostiran.ir
