@@ -161,7 +161,6 @@ mirror.bytemark.co.uk
 mirror.cc.columbia.edu
 mirror.cedia.org.ec
 mirror.cedille.club
-mirror.chaoticum.net
 mirror.cj2.nl
 mirror.clarkson.edu
 mirror.clientvps.com
