@@ -1,7 +1,6 @@
 arch.hu.fo
 arch.jensgutermuth.de
 arch.kyberorg.fi
-arch.lucassymons.net
 arch.midov.pl
 arch.mirror.constant.com
 arch.mirror.far.fi
@@ -45,6 +44,7 @@ archlinux.mirror.pcextreme.nl
 archlinux.mirror.py
 archlinux.mirror.rafal.ca
 archlinux.mirror.root.lu
+archlinux.mirror.server24.net
 archlinux.mirror.wearetriple.com
 archlinux.mirrors.benatherton.com
 archlinux.mirrors.linux.ro
