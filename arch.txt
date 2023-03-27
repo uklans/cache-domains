@@ -18,6 +18,7 @@ arch.softver.org.mk
 arch.yhtez.xyz
 arch.yourlabs.org
 archimonde.ts.si
+archlinux-mirror.cloud.mu
 archlinux.astra.in.ua
 archlinux.c3sl.ufpr.br
 archlinux.ccns.ncku.edu.tw
