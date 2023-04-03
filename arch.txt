@@ -18,7 +18,7 @@ arch.softver.org.mk
 arch.yhtez.xyz
 arch.yourlabs.org
 archimonde.ts.si
-archive_ca.gaab-networks.de
+archive-ca.gaab-networks.de
 archlinux-mirror.cloud.mu
 archlinux.astra.in.ua
 archlinux.c3sl.ufpr.br
