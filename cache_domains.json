@@ -35,6 +35,11 @@
 			"description": "CDN for frontier games",
 			"domain_files": ["frontier.txt"]
 		},
+                {
+                        "name": "mobilelegends",
+                        "description": "CDN for Mobile Legends",
+                        "domain_files": ["mobilelegends.txt"]
+                },
 		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
@@ -62,6 +67,11 @@
 			"description": "CDN for Path Of Exile",
 			"domain_files": ["pathofexile.txt"]
 		},
+                {
+                        "name": "pubgmobile",
+                        "description": "CDN for PUBG Mobile",
+                        "domain_files": ["pubgmobile.txt"]
+                },
 		{
 			"name": "renegadex",
 			"description": "CDN for Renegade X",
