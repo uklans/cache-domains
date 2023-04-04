@@ -120,7 +120,12 @@
 		{
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
-			"domain_files": ["xboxlive.txt"]
+			"domain_files": [ "xboxlive.txt" ]
+		},
+		{
+			"name": "games.mail.ru",
+			"description": "CDN for mail.ru games",
+			"domain_files": [ "games.mail.ru.txt" ]
 		}
 	]
 }
