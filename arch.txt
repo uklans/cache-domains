@@ -144,6 +144,7 @@ mirror.0x.sg
 mirror.0xem.ma
 mirror.23m.com
 mirror.2degrees.nz
+mirror.4v1.in
 mirror.5i.fi
 mirror.aktkn.sg
 mirror.alwyzon.net
@@ -283,7 +284,6 @@ mirror.sg.gs
 mirror.siena.edu
 mirror.smith.geek.nz
 mirror.stephanie.is
-mirror.stephen304.com
 mirror.stjschools.org
 mirror.sunred.org
 mirror.surf
@@ -400,6 +400,7 @@ piotrkosoft.net
 pkg.adfinis.com
 plug-mirror.rcac.purdue.edu
 quantum-mirror.hu
+repo.br.ee
 repo.endpoint.ml
 repo.ialab.dsu.edu
 repo.iut.ac.ir
