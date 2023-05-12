@@ -67,6 +67,7 @@ archlinux.uk.mirror.allworldit.com
 archlinux.za.mirror.allworldit.com
 archlinux.zepto.cloud
 archmirror.hbit.sztaki.hu
+archmirror.hogwarts.fr
 archmirror.xyz
 archmirror1.octyl.net
 arlm.tyzoid.com
