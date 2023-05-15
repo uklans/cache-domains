@@ -153,6 +153,7 @@ mirror.23m.com
 mirror.2degrees.nz
 mirror.4v1.in
 mirror.5i.fi
+mirror.adectra.com
 mirror.aktkn.sg
 mirror.alwyzon.net
 mirror.ams1.nl.leaseweb.net
@@ -398,7 +399,10 @@ mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
 muug.ca
 nnenix.mm.fcix.net
+nocix.mm.fcix.net
 nova.quantum-mirror.hu
+ohioix.mm.fcix.net
+opencolo.mm.fcix.net
 ord.mirror.rackspace.com
 os.codefionn.eu
 ossmirror.mycloud.services
@@ -420,6 +424,7 @@ suro.ubaya.ac.id
 syd.mirror.rackspace.com
 tux.rainside.sk
 uvermont.mm.fcix.net
+volico.mm.fcix.net
 vpsmurah.jagoanhosting.com
 wcbmedia.io
 www.caco.ic.unicamp.br
