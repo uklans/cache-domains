@@ -1,5 +1,6 @@
 masterconn.qq.com
 wup.imtt.qq.com
+sy.guanjia.qq.com
 ocsp2.globalsign.com
 ocsp.globalsign.com
 qbwup.imtt.qq.com
