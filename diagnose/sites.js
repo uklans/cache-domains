@@ -16,12 +16,12 @@ const download = (url, done)=> {
    .then(done)	
 }
 const downloadDomainFile = (data) => {
-	return download('/' + data.domain_files[0], (domains) => {
+	return download('/cache-domains/' + data.domain_files[0], (domains) => {
 		data.domains = domains.split('\n')
 	})
 }
 const downloadDomains = (done) => {
-	return downloadJSON('/cache_domains.json', (data)=> {
+	return downloadJSON('/cache-domains/cache_domains.json', (data)=> {
 		cachedomains = data.cache_domains;
 		const promises = []
 		for(const domain of cachedomains){
