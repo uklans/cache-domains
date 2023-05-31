@@ -183,13 +183,6 @@
                 "xboxlive.txt"
             ],
             "name": "xboxlive"
-        },
-        {
-            "description": "CDN for Test Servers",
-            "domain_files": [
-                "test.txt"
-            ],
-            "name": "test"
         }
     ]
 }
