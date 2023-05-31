@@ -1,0 +1,213 @@
+
+<html>
+<head>
+<title>LanCache Host Checker</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="sites.js"></script>
+<script>
+		wildcardPrefix = "lancachetest."
+		function hideAlert() {
+			$("#cache-info").hide();
+		}
+
+		function displayCdnAlert(cdn) {
+			console.log(cdn, cachedomains[cdn]);
+			if (cachedomains[cdn].brokenDomains.length == 0) {
+				return hideAlert();
+			}
+			var newHTML = "";
+			for (var x in cachedomains[cdn].brokenDomains) {
+				newHTML += cachedomains[cdn].brokenDomains[x]+"<br>";
+			}
+			displayAlert("The following domains did not resolve to a LanCache instance:", newHTML);
+		}
+		function displayAlert(title, content, type="warning") {
+			$("#cache-info").removeClass("alert-warning").removeClass("alert-danger").removeClass("alert-success").addClass("alert-"+type);
+			$("#cache-info-display-title").html("<b>"+title+"</b><br>");
+			$("#cache-info-display").html(content);
+			$("#cache-info").show();
+		}
+
+		function checkDomain(cdn, domainname) {
+			var re = /^\*\./g
+			var domainname = domainname.replace(re, wildcardPrefix);
+			return new Promise(function(resolve, reject) {
+				var handleResponse = function(xhr) {
+					if (xhr.host.indexOf(wildcardPrefix) > -1) {
+						xhr.host = xhr.host.replace(wildcardPrefix, "*.") + " (via "+xhr.host+")";
+					}
+					var ret = {
+						host: xhr.host,
+						status: 2,
+						cdn: cdn,
+						respondingHost: false,
+					};
+					if (xhr.status == 204) {
+						ret.respondingHost = xhr.getResponseHeader("X-LanCache-Processed-By");
+						ret.status = 1;
+						return resolve(ret);
+					}
+					ret.status = 0;
+					return resolve(ret);
+				}
+				$.ajax("http://" + domainname + "/lancache-heartbeat",
+				{
+					beforeSend: function(xhr, settings) {
+						xhr.host = settings.url.match(/^http:\/\/(.+?)\/.+/)[1];
+					},
+					success: function(data, textStatus, xhr){ 
+						handleResponse(xhr)
+					},
+					error: function(xhr){
+						handleResponse(xhr)
+					},
+
+				})
+			})
+		}
+
+		$(document).ready(function() {
+			hideAlert();
+			$("#inputTest").keydown(function(event) {
+				if (event.which == 13) {
+					$("#inputTestButton").click();
+				}
+			});
+			$("#inputTestButton").click(function() {
+				var url = $("#inputTest").val();
+				checkDomain(false, url).then(function(response) {
+					var alertType = "danger";
+					var alertTitle = "Test failed";
+					var alertText = url+" did not resolve to a LanCache instance";
+					if (response.status == 1) {
+						alertType = "success";
+						alertTitle = "Test Succeeded";
+						alertText = url+" resolves to a LanCache instance named "+response.respondingHost;
+					}
+					displayAlert(alertTitle, alertText, alertType)
+					console.log(response);
+				})
+			});
+			var cdntemplate = $("#cdntemplate");
+			var cdnElements = {};
+			var domaincount = 0;
+			var providercount = 0;
+			var callbacks = {};
+			var distinctCaches = [];
+			downloadDomains(() => {
+				for (var cdn in cachedomains) {
+				callbacks[cdn] = [];
+				cachedomains[cdn].brokenDomains = [];
+				providercount++;
+				domaincount += cachedomains[cdn].domains.length;
+				cdnElements[cdn] = cdntemplate.clone().attr('id', 'cdn'+cdn).appendTo($("#cdns"));
+				$(cdnElements[cdn]).find("#title").html(cdn);
+				$(cdnElements[cdn]).find("#tagline").html(cachedomains[cdn].description);
+				$(cdnElements[cdn]).find("#totalcdndomaincount").html(cachedomains[cdn].domains.length);
+				$(cdnElements[cdn]).click(function() {
+					displayCdnAlert($(this).find("#title").html());
+				});
+				for (var domain in cachedomains[cdn].domains) {
+					callbacks[cdn].push(checkDomain(cdn, cachedomains[cdn].domains[domain]))
+				}
+				Promise.all(callbacks[cdn]).then(function(responses) {
+					var cdnname = this.find("#title").html();
+					var success = 0;
+					var fail = 0;
+					for (var x in responses) {
+						var response = responses[x];
+						if (response.status == 1) {
+							success++;
+							if (distinctCaches.indexOf(response.respondingHost) == -1) {
+								distinctCaches.push(response.respondingHost);
+							}
+						} else {
+							cachedomains[response.cdn].brokenDomains.push(response.host);
+							fail++;
+						}
+					}
+					var newstate = "alert-success";
+					if (fail > 0) {
+						newstate = "alert-warning";
+					}
+					if (success == 0) {
+						newstate = "alert-danger";
+					}
+					this.find(".item").removeClass("alert-info").addClass(newstate);
+					this.find("#workingcdndomaincount").html(success);
+				}.bind(cdnElements[cdn]));
+			}
+			$("#urltext").html(urltext)
+			$("#domaincount").html(domaincount)
+			$("#providercount").html(providercount)
+			cdntemplate.hide()
+			});
+			
+		});
+	</script>
+<style>
+.container-fluid { max-width: 95%; }
+.cdnentry { padding: 5px; }
+.margin-fix { margin-top: 5px; margin-bottom: 0px; }
+.jumbotron { padding: 20px; }
+</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="jumbotron margin-fix">
+    <div class="container">
+      <center>
+        <img src="logo.png" alt="">
+      </center>
+      <h1 class="display-4">Lancache Test</h1>
+      <p class="lead">We are aware of <b id="domaincount">0</b> domains spanning <b id="providercount">0</b> providers.</p>
+	  <p class="lead" style="color:red;font-weight:bold;">Test this website in the Mozilla Firefox browser</p>
+      <p class="lead">During Lancache Test if you find the listed Gaming Stream sites RED then your Cache Services are NOT working. Please use our following DNS to resolve this issue instantly!</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="lead">DNS IPv4:<br/>
+              1. <strong>10.100.100.10</strong><br/>
+          </div>
+          <div class="col-md-6">
+            <p class="lead">DNS IPv6:<br/>
+              1. <strong>Please remove all IPV6 DNS from ROUTER and PC</strong><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="cdns" class="row">
+    <div id="cdn-tester" class="cdnentry col-md-12">
+      <div class="item text-center border rounded alert alert-secondary">
+        <div class="form-group margin-fix">
+          <div class="col-sm-6 offset-sm-3">
+            <div class="input-group">
+              <input type="text" class="form-control rounded" id="inputTest" placeholder="Check domain (Wildcards valid)">
+              <span class="input-group-btn"> &nbsp;
+              <button id="inputTestButton" class="btn btn-primary mb-2">Test</button>
+              </span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cdnentry col-md-12">
+      <div id="cache-info" class="item text-center border rounded alert alert-warning">
+        <button type="button" class="close" aria-label="Close"> <span aria-hidden="true" onclick="hideAlert()">&times;</span> </button>
+        <span id="cache-info-display-title"> <b>The following domains did not resolve to a LanCache:</b><br>
+        </span> <span id="cache-info-display"> </span> </div>
+    </div>
+    <div id="cdntemplate" class="cdnentry col-md-3">
+      <div class='item text-center border rounded alert-info'> <b><span id="title">Nothing is defined?<br>
+        I'm not sure how you've done this, but you have.</span></b><br>
+        <span id="tagline">So well done.</span><br>
+        <span id="workingcdndomaincount">0</span>/<span id="totalcdndomaincount">0</span> domains working </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
