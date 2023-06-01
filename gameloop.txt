@@ -34,3 +34,4 @@ k.gjacky.com.akamaized.net
 pubgmpdrcdn.intlgame.com.edgesuite.net
 api.club.gpubgm.com
 www.pubgmobile.com
+www.pubgmobile.com.cdn.ettdnsv.com
