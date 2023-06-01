@@ -8,7 +8,6 @@ dldir.qq.com
 syzs.qq.com
 pm.myapp.com
 k.gjacky.com
-pandoracdn.amsoveasea.com
 pbs.twimg.com
 down.qq.com
 p.guanjia.qq.com
@@ -35,4 +34,6 @@ pubgmpdrcdn.intlgame.com.edgesuite.net
 api.club.gpubgm.com
 www.pubgmobile.com
 www.pubgmobile.com.cdn.ettdnsv.com
+pandoracdn.amsoveasea.com
 napubgm.broker.amsoveasea.com
+*.amsoveasea.com
