@@ -59,7 +59,6 @@ archlinux.mirrors.linux.ro
 archlinux.mirrors.ovh.net
 archlinux.nautile.nc
 archlinux.pop-es.rnp.br
-archlinux.qontinuum.space
 archlinux.rezopole.net
 archlinux.thaller.ws
 archlinux.uib.no
@@ -351,6 +350,7 @@ mirrors.hit.edu.cn
 mirrors.hostico.ro
 mirrors.ims.nksc.lt
 mirrors.janbruckner.de
+mirrors.jlu.edu.cn
 mirrors.kernel.org
 mirrors.liquidweb.com
 mirrors.lug.mtu.edu
@@ -374,6 +374,7 @@ mirrors.ocf.berkeley.edu
 mirrors.piconets.webwerks.in
 mirrors.pidginhost.com
 mirrors.powernet.com.ru
+mirrors.qontinuum.space
 mirrors.radwebhosting.com
 mirrors.rit.edu
 mirrors.rutgers.edu
