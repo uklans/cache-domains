@@ -122,5 +122,10 @@
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
 		}
+		{
+			"name": "mlbb",
+			"description": "CDN for mobile legends bang bang",
+			"domain_files": ["mlbb.txt"]
+		}
 	]
 }
