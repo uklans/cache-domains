@@ -18,13 +18,6 @@ arch.softver.org.mk
 arch.yhtez.xyz
 arch.yourlabs.org
 archimonde.ts.si
-archive-au.gaab-networks.de
-archive-ca.gaab-networks.de
-archive-eu-hel.gaab-networks.de
-archive-ru-mos.gaab-networks.de
-archive-us-lv.gaab-networks.de
-archive-us-nj.gaab-networks.de
-archive-us-ny.gaab-networks.de
 archlinux-mirror.cloud.mu
 archlinux.astra.in.ua
 archlinux.c3sl.ufpr.br
@@ -165,6 +158,7 @@ mirror.archlinux.tw
 mirror.arctic.lol
 mirror.arizona.edu
 mirror.arvancloud.com
+mirror.bahnhof.net
 mirror.bardia.tech
 mirror.bizflycloud.vn
 mirror.bytemark.co.uk
@@ -314,6 +308,7 @@ mirror.undisclose.de
 mirror.united-gameserver.de
 mirror.uta.edu.ec
 mirror.veriteknik.net.tr
+mirror.vinehost.net
 mirror.vpsfree.cz
 mirror.vtti.vt.edu
 mirror.wdc1.us.leaseweb.net
@@ -343,7 +338,6 @@ mirrors.dotsrc.org
 mirrors.evoluso.com
 mirrors.eze.sysarmy.com
 mirrors.gandi.net
-mirrors.gethosted.online
 mirrors.gigenet.com
 mirrors.go.ro
 mirrors.hit.edu.cn
