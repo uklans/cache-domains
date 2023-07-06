@@ -183,6 +183,21 @@
                 "xboxlive.txt"
             ],
             "name": "xboxlive"
+        },
+        {
+            "name": "mlbb",
+            "description": "CDN for mobile legends bang bang",
+            "domain_files": ["mlbb.txt"]
+        },
+        {
+            "name": "arch",
+            "description": "Arch Linux based repositories",
+            "domain_files": ["arch.txt"]
+        },
+        {
+            "name": "debian",
+            "description": "Debian based repositories",
+            "domain_files": ["debian.txt"]
         }
     ]
 }
