@@ -121,6 +121,11 @@
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
-		}
+		},
+                {
+                        "name": "hoyolab",
+                        "description": "CDN for hoyolab",
+                        "domain_files": ["hoyolab.txt"]
+                }
 	]
 }
