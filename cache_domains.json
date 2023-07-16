@@ -198,6 +198,11 @@
             "name": "debian",
             "description": "Debian based repositories",
             "domain_files": ["debian.txt"]
+        },
+        {
+            "name": "genshin",
+            "description": "Genshin Impact Game",
+            "domain_files": ["genshin.txt"]
         }
     ]
 }
