@@ -1,0 +1,2 @@
+*.yuanshen.com
+autopatchhk.yuanshen.com
