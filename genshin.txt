@@ -1,2 +1,3 @@
 *.yuanshen.com
 autopatchhk.yuanshen.com
+genshin.hoyoverse.com
