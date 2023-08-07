@@ -69,10 +69,10 @@ ca.us.mirror.archlinux-br.org
 codingflyboy.mm.fcix.net
 coresite.mm.fcix.net
 depo.turkiye.linux.web.tr
+devpg.net
 dfw.mirror.rackspace.com
 distro.ibiblio.org
 edgeuno-bog2.mm.fcix.net
-f.archlinuxvn.org
 fastmirror.pp.ua
 forksystems.mm.fcix.net
 free.nchc.org.tw
@@ -128,6 +128,7 @@ iad.mirrors.misaka.one
 il.us.mirror.archlinux-br.org
 in-mirror.garudalinux.org
 irltoolkit.mm.fcix.net
+is.mirror.flokinet.net
 kebo.pens.ac.id
 linorg.usp.br
 linux.rz.rub.de
@@ -226,6 +227,7 @@ mirror.kaminski.io
 mirror.kamtv.ru
 mirror.kku.ac.th
 mirror.koddos.net
+mirror.kpfu.ru
 mirror.kumi.systems
 mirror.labkom.id
 mirror.lagoon.nc
@@ -246,14 +248,15 @@ mirror.mia11.us.leaseweb.net
 mirror.mijn.host
 mirror.mikrogravitation.org
 mirror.mirohost.net
-mirror.misakamikoto.network
 mirror.moson.org
 mirror.nak-mci.ir
 mirror.neostrada.nl
 mirror.netcologne.de
 mirror.netweaver.uk
 mirror.neuf.no
+mirror.nishi.network
 mirror.nw-sys.ru
+mirror.nyist.edu.cn
 mirror.oldsql.cc
 mirror.one.com
 mirror.onet.pl
@@ -285,6 +288,7 @@ mirror.sfo12.us.leaseweb.net
 mirror.sg.gs
 mirror.siena.edu
 mirror.smith.geek.nz
+mirror.spaceint.fr
 mirror.stephanie.is
 mirror.stjschools.org
 mirror.sunred.org
@@ -319,6 +323,7 @@ mirror.xeonbd.com
 mirror.xtom.com.hk
 mirror.yandex.ru
 mirror.yer.az
+mirror.yuki.net.uk
 mirror2.evolution-host.com
 mirror2.totbb.net
 mirrors.163.com
@@ -393,7 +398,6 @@ mirrors.xtom.ee
 mirrors.xtom.nl
 mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
-muug.ca
 nnenix.mm.fcix.net
 nocix.mm.fcix.net
 nova.quantum-mirror.hu
