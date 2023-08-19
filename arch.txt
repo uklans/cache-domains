@@ -343,6 +343,7 @@ mirrors.dotsrc.org
 mirrors.evoluso.com
 mirrors.eze.sysarmy.com
 mirrors.gandi.net
+mirrors.gethosted.online
 mirrors.gigenet.com
 mirrors.go.ro
 mirrors.hit.edu.cn
