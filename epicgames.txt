@@ -10,3 +10,4 @@ download4.epicgames.com
 epicgames-download1.akamaized.net
 fastly-download.epicgames.com
 api.epicgames.dev
+datarouter.ol.epicgames.com
