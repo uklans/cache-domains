@@ -64,7 +64,6 @@ archmirror.xyz
 archmirror1.octyl.net
 arlm.tyzoid.com
 artfiles.org
-br.mirror.archlinux-br.org
 ca.us.mirror.archlinux-br.org
 codingflyboy.mm.fcix.net
 coresite.mm.fcix.net
@@ -158,8 +157,9 @@ mirror.archlinux.no
 mirror.archlinux.tw
 mirror.arctic.lol
 mirror.arizona.edu
-mirror.arvancloud.com
+mirror.arvancloud.ir
 mirror.bahnhof.net
+mirror.barata.pt
 mirror.bardia.tech
 mirror.bizflycloud.vn
 mirror.bytemark.co.uk
@@ -193,7 +193,6 @@ mirror.ette.biz
 mirror.f4st.host
 mirror.faizuladib.com
 mirror.fcix.net
-mirror.flokinet.net
 mirror.fossable.org
 mirror.fra10.de.leaseweb.net
 mirror.fsmg.org.nz
@@ -399,6 +398,7 @@ mirrors.xtom.ee
 mirrors.xtom.nl
 mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
+muug.ca
 nnenix.mm.fcix.net
 nocix.mm.fcix.net
 nova.quantum-mirror.hu
@@ -416,9 +416,11 @@ repo.br.ee
 repo.endpoint.ml
 repo.ialab.dsu.edu
 repo.iut.ac.ir
+repo.jing.rocks
 repo.miserver.it.umich.edu
 repo.skni.umcs.pl
 ridgewireless.mm.fcix.net
+ro.mirror.flokinet.net
 southfront.mm.fcix.net
 super.quantum-mirror.hu
 suro.ubaya.ac.id
