@@ -399,6 +399,7 @@ mirrors.xtom.nl
 mirrors.zju.edu.cn
 mnvoip.mm.fcix.net
 muug.ca
+nl.mirror.flokinet.net
 nnenix.mm.fcix.net
 nocix.mm.fcix.net
 nova.quantum-mirror.hu
