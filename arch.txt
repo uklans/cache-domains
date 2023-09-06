@@ -37,6 +37,7 @@ archlinux.mirror.colo-serv.net
 archlinux.mirror.digitalpacific.com.au
 archlinux.mirror.garr.it
 archlinux.mirror.iphh.net
+archlinux.mirror.kangaroot.net
 archlinux.mirror.liquidtelecom.com
 archlinux.mirror.liteserver.nl
 archlinux.mirror.net.in
@@ -67,7 +68,6 @@ ca.us.mirror.archlinux-br.org
 codingflyboy.mm.fcix.net
 coresite.mm.fcix.net
 depo.turkiye.linux.web.tr
-devpg.net
 dfw.mirror.rackspace.com
 distro.ibiblio.org
 edgeuno-bog2.mm.fcix.net
@@ -148,7 +148,6 @@ mirror.adectra.com
 mirror.aktkn.sg
 mirror.alwyzon.net
 mirror.ams1.nl.leaseweb.net
-mirror.anigil.com
 mirror.anquan.cl
 mirror.archlinux.ikoula.com
 mirror.archlinux.no
@@ -284,6 +283,7 @@ mirror.serverion.com
 mirror.sfo12.us.leaseweb.net
 mirror.sg.gs
 mirror.siena.edu
+mirror.siwoo.org
 mirror.smith.geek.nz
 mirror.spaceint.fr
 mirror.stephanie.is
@@ -405,6 +405,7 @@ ord.mirror.rackspace.com
 os.codefionn.eu
 ossmirror.mycloud.services
 packages.oth-regensburg.de
+pawe.me
 piotrkosoft.net
 pkg.adfinis.com
 plug-mirror.rcac.purdue.edu
