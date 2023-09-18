@@ -301,6 +301,7 @@ mirror.tiguinet.net
 mirror.truenetwork.ru
 mirror.tux.si
 mirror.ubrco.de
+mirror.ufam.edu.br
 mirror.ufro.cl
 mirror.ufscar.br
 mirror.umd.edu
