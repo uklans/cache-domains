@@ -206,6 +206,7 @@ mirror.hoster.kz
 mirror.hosthink.net
 mirror.hostiran.ir
 mirror.hostup.org
+mirror.hugo-betrugo.de
 mirror.i3d.net
 mirror.ihost.md
 mirror.infernocomms.net
