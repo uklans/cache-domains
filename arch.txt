@@ -216,6 +216,7 @@ mirror.internode.on.net
 mirror.is.co.za
 mirror.isoc.org.il
 mirror.it4i.cz
+mirror.its-tps.fr
 mirror.its.dal.ca
 mirror.jingk.ai
 mirror.jordanrey.me
@@ -236,6 +237,7 @@ mirror.lnx.sk
 mirror.lty.me
 mirror.lyrahosting.com
 mirror.lzu.edu.cn
+mirror.maa.albony.in
 mirror.mangohost.net
 mirror.math.princeton.edu
 mirror.metalgamer.eu
@@ -369,6 +371,7 @@ mirrors.nju.edu.cn
 mirrors.nxtgen.com
 mirrors.nxthost.com
 mirrors.ocf.berkeley.edu
+mirrors.opensource.is
 mirrors.piconets.webwerks.in
 mirrors.pidginhost.com
 mirrors.powernet.com.ru
