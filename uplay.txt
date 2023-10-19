@@ -1,2 +1,2 @@
 *.cdn.ubi.com
-can.ubi.com
+cdn.ubi.com
