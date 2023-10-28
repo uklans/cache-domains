@@ -1,3 +1,4 @@
+arch.goober.cloud
 arch.hu.fo
 arch.jensgutermuth.de
 arch.kyberorg.fi
@@ -410,7 +411,6 @@ ord.mirror.rackspace.com
 os.codefionn.eu
 ossmirror.mycloud.services
 packages.oth-regensburg.de
-pawe.me
 piotrkosoft.net
 pkg.adfinis.com
 plug-mirror.rcac.purdue.edu
