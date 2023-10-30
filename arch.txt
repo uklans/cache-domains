@@ -248,6 +248,7 @@ mirror.mia11.us.leaseweb.net
 mirror.mijn.host
 mirror.mikrogravitation.org
 mirror.mirohost.net
+mirror.morgan.kr
 mirror.moson.org
 mirror.nak-mci.ir
 mirror.neostrada.nl
