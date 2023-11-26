@@ -65,9 +65,12 @@ archmirror.xyz
 archmirror1.octyl.net
 arlm.tyzoid.com
 artfiles.org
+au.mirrors.cicku.me
+ca.mirrors.cicku.me
 ca.us.mirror.archlinux-br.org
 codingflyboy.mm.fcix.net
 coresite.mm.fcix.net
+de.mirrors.cicku.me
 depo.turkiye.linux.web.tr
 dfw.mirror.rackspace.com
 distro.ibiblio.org
@@ -126,9 +129,12 @@ iad.mirror.rackspace.com
 iad.mirrors.misaka.one
 il.us.mirror.archlinux-br.org
 in-mirror.garudalinux.org
+in.mirrors.cicku.me
 irltoolkit.mm.fcix.net
 is.mirror.flokinet.net
+jp.mirrors.cicku.me
 kebo.pens.ac.id
+kr.mirrors.cicku.me
 linorg.usp.br
 linux.rz.rub.de
 lon.mirror.rackspace.com
@@ -160,6 +166,7 @@ mirror.bahnhof.net
 mirror.barata.pt
 mirror.bardia.tech
 mirror.bizflycloud.vn
+mirror.bouwhuis.network
 mirror.bytemark.co.uk
 mirror.cc.columbia.edu
 mirror.cedia.org.ec
@@ -266,7 +273,6 @@ mirror.orbit-os.com
 mirror.pagenotfound.de
 mirror.papua.go.id
 mirror.phx1.us.spryservers.net
-mirror.pit.teraswitch.com
 mirror.pmf.kg.ac.rs
 mirror.poliwangi.ac.id
 mirror.powerfly.ca
@@ -425,11 +431,13 @@ repo.miserver.it.umich.edu
 repo.skni.umcs.pl
 ridgewireless.mm.fcix.net
 ro.mirror.flokinet.net
+sg.mirrors.cicku.me
 southfront.mm.fcix.net
 super.quantum-mirror.hu
 suro.ubaya.ac.id
 syd.mirror.rackspace.com
 tux.rainside.sk
+us.mirrors.cicku.me
 uvermont.mm.fcix.net
 volico.mm.fcix.net
 vpsmurah.jagoanhosting.com
