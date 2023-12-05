@@ -297,7 +297,6 @@ mirror.siena.edu
 mirror.siwoo.org
 mirror.smith.geek.nz
 mirror.spaceint.fr
-mirror.stephanie.is
 mirror.stjschools.org
 mirror.sunred.org
 mirror.surf
@@ -341,6 +340,7 @@ mirrors.aggregate.org
 mirrors.aliyun.com
 mirrors.atviras.lt
 mirrors.bfsu.edu.cn
+mirrors.bjg.at
 mirrors.bloomu.edu
 mirrors.cat.net
 mirrors.cat.pdx.edu
