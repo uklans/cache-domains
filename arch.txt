@@ -422,7 +422,7 @@ pkg.adfinis.com
 plug-mirror.rcac.purdue.edu
 quantum-mirror.hu
 repo.br.ee
-repo.endpoint.ml
+repo.hyron.dev
 repo.ialab.dsu.edu
 repo.iut.ac.ir
 repo.jing.rocks
