@@ -32,6 +32,7 @@ archlinux.interhost.co.il
 archlinux.ip-connect.vn.ua
 archlinux.iskon.hr
 archlinux.koyanet.lv
+archlinux.macarne.com
 archlinux.mailtunnel.eu
 archlinux.mirror.ba
 archlinux.mirror.colo-serv.net
@@ -88,7 +89,6 @@ ftp.fi.muni.cz
 ftp.gwdg.de
 ftp.halifax.rwth-aachen.de
 ftp.harukasan.org
-ftp.heanet.ie
 ftp.hosteurope.de
 ftp.icm.edu.pl
 ftp.iinet.net.au
@@ -273,6 +273,7 @@ mirror.orbit-os.com
 mirror.pagenotfound.de
 mirror.papua.go.id
 mirror.phx1.us.spryservers.net
+mirror.pit.teraswitch.com
 mirror.pmf.kg.ac.rs
 mirror.poliwangi.ac.id
 mirror.powerfly.ca
@@ -348,12 +349,12 @@ mirrors.chroot.ro
 mirrors.cqu.edu.cn
 mirrors.dotsrc.org
 mirrors.evoluso.com
-mirrors.eze.sysarmy.com
 mirrors.gandi.net
 mirrors.gethosted.online
 mirrors.gigenet.com
 mirrors.go.ro
 mirrors.hit.edu.cn
+mirrors.hosterion.ro
 mirrors.hostico.ro
 mirrors.ims.nksc.lt
 mirrors.janbruckner.de
