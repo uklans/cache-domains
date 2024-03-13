@@ -36,6 +36,17 @@
 			"domain_files": ["frontier.txt"]
 		},
 		{
+			"name": "linux",
+			"description": "HTTP mirrors for Linux distributions",
+			"domain_files": ["linux.txt"],
+			"notes": "Based on https://mirrors.alpinelinux.org/mirrors.txt, https://archlinux.org/mirrorlist/all/http/, http://mirrors.ubuntu.com/mirrors.txt"
+		},
+		{
+			"name": "mobileapps",
+			"description": "Various HTTP domains for mobile applications",
+			"domain_files": ["mobileapps.txt"]
+		},
+		{
 			"name": "nexusmods",
 			"description": "Nexus mods / skyrim content",
 			"domain_files": ["nexusmods.txt"]
