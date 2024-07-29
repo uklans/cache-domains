@@ -1,6 +1,0 @@
-# Daybreak games 
-#
-# Do NOT cache manifest.patch.daybreakgames.com
-#
-#PS2
-pls.patch.daybreakgames.com
