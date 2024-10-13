@@ -9,3 +9,8 @@ playstation4.sony.akadns.net
 theia.dl.playstation.net
 tmdb.np.dl.playstation.net
 gs-sec.ww.np.dl.playstation.net
+uef.np.dl.playstation.net
+gst.prod.dl.playstation.net
+vulcan.dl.playstation.net
+sgst.prod.dl.playstation.net
+psnobj.prod.dl.playstation.net
