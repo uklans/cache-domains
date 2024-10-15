@@ -13,21 +13,26 @@ if [ $out -gt 0 ] ; then
 	exit 1
 fi
 
+forward=false
+if [ ${1} == --forward ]; then
+  forward=true
+fi
+
 cachenamedefault="disabled"
 
-while read line; do 
+while read line; do
 	ip=$(jq ".ips[\"${line}\"]" config.json)
 	declare "cacheip$line"="$ip"
 done <<< $(jq -r '.ips | to_entries[] | .key' config.json)
 
-while read line; do 
+while read line; do
 	name=$(jq -r ".cache_domains[\"${line}\"]" config.json)
 	declare "cachename$line"="$name"
 done <<< $(jq -r '.cache_domains | to_entries[] | .key' config.json)
 
 rm -rf ${outputdir}
 mkdir -p ${outputdir}
-while read entry; do 
+while read entry; do
 	unset cacheip
 	unset cachename
 	key=$(jq -r ".cache_domains[$entry].name" $path)
@@ -45,22 +50,47 @@ while read entry; do
 			destfilename=$(echo $filename | sed -e 's/txt/conf/')
 			outputfile=${outputdir}/${destfilename}
 			touch $outputfile
+			
+			if $forward; then
+				echo 'forward-zone:' > $outputfile
+				echo "  name: \"${key}.cache.lancache.net.\"" >> $outputfile
+				for i in ${cacheip}; do
+					echo "  forward-addr: \"${i}\"" >> $outputfile
+				done
+				echo "  forward-first: yes" >> $outputfile
+				echo "  forward-no-cache: yes" >> $outputfile
+			fi
+
 			while read fileentry; do
 				# Ignore comments and newlines
 				if [[ $fileentry == \#* ]] || [[ -z $fileentry ]]; then
 					continue
 				fi
 				parsed=$(echo $fileentry | sed -e "s/^\*\.//")
-				if grep -qx "  local-zone: \"${parsed}\" redirect" $outputfile; then
-					continue
+
+				if $forward; then
+					if grep -qx "  name: \"${parsed}\"" $outputfile; then
+						continue
+					fi
+					echo 'forward-zone:' >> $outputfile
+					echo "  name: \"${parsed}.\"" >> $outputfile
+					for i in ${cacheip}; do
+						echo "  forward-addr: \"${i}\"" >> $outputfile
+					done
+					echo "  forward-first: yes" >> $outputfile
+					echo "  forward-no-cache: yes" >> $outputfile
+				else
+					if grep -qx "  local-zone: \"${parsed}\" redirect" $outputfile; then
+						continue
+					fi
+					if [[ $(head -n 1 $outputfile) != "server:" ]]; then
+					    echo "server:" >> $outputfile
+					fi
+					echo "  local-zone: \"${parsed}\" redirect" >> $outputfile
+					for i in ${cacheip}; do
+						echo "  local-data: \"${parsed} 30 IN A ${i}\"" >> $outputfile
+					done
 				fi
-        if [[ $(head -n 1 $outputfile) != "server:" ]]; then
-            echo "server:" >> $outputfile
-        fi
-				echo "  local-zone: \"${parsed}\" redirect" >> $outputfile
-				for i in ${cacheip}; do
-					echo "  local-data: \"${parsed} 30 IN A ${i}\"" >> $outputfile
-				done
 			done <<< $(cat ${basedir}/$filename | sort);
 		done <<< $(jq -r ".cache_domains[$entry].domain_files[$fileid]" $path)
 	done <<< $(jq -r ".cache_domains[$entry].domain_files | to_entries[] | .key" $path)
