@@ -21,18 +21,18 @@ The following example assumes a single shared Cacheserver IP:
 {
     "combined_output": false,
     "ips": {
-        "generic":      ["10.10.10.200"]
+        "monolithic":   ["10.10.10.200"]
     },
     "cache_domains": {
-        "blizzard":     "generic",
-        "epicgames":    "generic",
-        "nintendo":     "generic",
-        "origin":       "generic",
-        "riot":         "generic",
-        "sony":         "generic",
-        "steam":        "generic",
-        "uplay":        "generic",
-        "wsus":         "generic"
+        "blizzard":     "monolithic",
+        "epicgames":    "monolithic",
+        "nintendo":     "monolithic",
+        "origin":       "monolithic",
+        "riot":         "monolithic",
+        "sony":         "monolithic",
+        "steam":        "monolithic",
+        "uplay":        "monolithic",
+        "wsus":         "monolithic"
     }
 }
 ```
