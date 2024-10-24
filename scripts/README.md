@@ -15,7 +15,8 @@ configuration which can be utilised with:
 
 1. Copy `config.example.json` to `config.json`.
 2. Modify `config.json` to include your Cacheserver's IP(s) and the CDNs you plan to cache.
-   The following example assumes a single shared Cacheserver IP:
+
+The following example assumes a single shared Cacheserver IP:
 ```json
 {
     "combined_output": false,
