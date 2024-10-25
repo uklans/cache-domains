@@ -5,36 +5,41 @@
 The respective shell scripts contained within this directory can be utilised to generate application specific compliant
 configuration which can be utilised with:
 
-* Dnsmasq
-* Unbound
 * AdGuard Home
+* BIND9
+* Dnsmasq/Pi-hole
+* Squid
+* Unbound
 
 ## Usage
 
 1. Copy `config.example.json` to `config.json`.
 2. Modify `config.json` to include your Cacheserver's IP(s) and the CDNs you plan to cache.
-   The following example assumes a single shared Cacheserver IP:
+
+The following example assumes a single shared Cacheserver IP:
 ```json
 {
-  "ips": {
-    "generic":	["10.10.10.200"]
-  },
-  "cache_domains": {
-    "blizzard":     "generic",
-    "epicgames":    "generic",
-    "nintendo":     "generic",
-    "origin":       "generic",
-    "riot":         "generic",
-    "sony":         "generic",
-    "steam":        "generic",
-    "uplay":        "generic",
-    "wsus":         "generic"
-  }
+    "combined_output": false,
+    "ips": {
+        "monolithic":   ["10.10.10.200"]
+    },
+    "cache_domains": {
+        "blizzard":     "monolithic",
+        "epicgames":    "monolithic",
+        "nintendo":     "monolithic",
+        "origin":       "monolithic",
+        "riot":         "monolithic",
+        "sony":         "monolithic",
+        "steam":        "monolithic",
+        "uplay":        "monolithic",
+        "wsus":         "monolithic"
+    }
 }
 ```
 3. Run generation script relative to your DNS implementation: `bash create-dnsmasq.sh`.
-4. Copy files from `output/{dnsmasq,unbound}/*` to the respective locations for Dnsmasq/Unbound.
-5. Restart Dnsmasq or Unbound.
+4. If `combined_output` is set to `true` this will result in a single output file: `lancache.conf` with all your enabled services (applies to Adguard Home, Dnsmasq or Unbound).
+5. Copy files from `output/{adguardhome,dnsmasq,rpz,squid,unbound}/*` to the respective locations for Dnsmasq/Unbound.
+6. Restart the appropriate service.
 
 ### Notes for Dnsmasq users
 
@@ -44,5 +49,5 @@ Multi-IP Lancache setups are only supported with Dnsmasq or Pi-hole versions >= 
 
 ### Notes for AdGuard Home users
 
-1. In the `config.json`, you may want to add an entry for your non-cached DNS upstreams. You can input this in `ip.adguardhome_upstream` as an array.
-2. Once you have ran the script, you can point the upstream list to the text file generated. For example: `upstream_dns_file: "/root/cache-domains/scripts/output/adguardhome/cache-domains.txt"`
+1. Utilising `"combined_output": true` is more convenient.
+2. Once you have run the script and uploaded the file to the appropriate location, you should navigate to Adguard Home -> Filters -> DNS blocklists -> Add blocklist -> Add a custom list.

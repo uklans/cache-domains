@@ -20,15 +20,15 @@ Many of the maintainers of this repo also contribute to [the lancachenet project
 
 There are several reasons why a particular service / CDN / website might not be on this list. Here are some of the more common ones:
 
- 1. It's not technically possible to cache it. Many popular websites, including video streaming sites and even some games CDN's use SSL Encryption (i.e https URLs) to serve their content. Because the client opens a secure connection directly to the host, there is no way for the network operator to see what they are downloading, nor cache it. Whilst there are several approaches to work around this, such as MITM techniques, they usually rely on control over the client device to affect SSL Certificates - control somebody running a BYOC LAN typically does not have over the devices customers bring.
- 
-   - [These issues](https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix) contain game CDNs that we would like to include, but cannot for this reason. 
- 
- 2. It's out of scope for a LAN. We try to keep this list targeted towards people running LANs. Whilst some none game-related CDNs are included for things like windows updates that use internet bandwidth at LANs, we do not go searching for unrelated sites / hostnames.
- 
- 3. It's not a good cache target / it would not get a good hit ratio. Game downloads are a great cache target because they are large, remain the same for every user and are likely to be downloaded multiple times at a LAN. Other hostnames that only serve dynamic or media files, or content that is not likely to be downloaded multiple times is not a good cache target and can waste valuable storage space on your cache server. This can lead to potentially more valuable content being evicted from the cache due to low space.
- 
- 4. We simply don't yet have a tested list of hostnames for it yet. This is the category you can help with - if you have something that doesn't fall into one of the above reasons not to include it, we would love to review your PR. See [the readme](https://github.com/uklans/cache-domains) for instructions on how to add a new CDN.
+1. It's not technically possible to cache it. Many popular websites, including video streaming sites and even some games CDN's use SSL Encryption (i.e https URLs) to serve their content. Because the client opens a secure connection directly to the host, there is no way for the network operator to see what they are downloading, nor cache it. Whilst there are several approaches to work around this, such as MITM techniques, they usually rely on control over the client device to affect SSL Certificates - control somebody running a BYOC LAN typically does not have over the devices customers bring.
+
+   - [These issues](https://github.com/uklans/cache-domains/issues?q=is%3Aissue+is%3Aopen+label%3Ahttps-cantfix) contain game CDNs that we would like to include, but cannot for this reason.
+
+2. It's out of scope for a LAN. We try to keep this list targeted towards people running LANs. Whilst some none game-related CDNs are included for things like windows updates that use internet bandwidth at LANs, we do not go searching for unrelated sites / hostnames.
+
+3. It's not a good cache target / it would not get a good hit ratio. Game downloads are a great cache target because they are large, remain the same for every user and are likely to be downloaded multiple times at a LAN. Other hostnames that only serve dynamic or media files, or content that is not likely to be downloaded multiple times is not a good cache target and can waste valuable storage space on your cache server. This can lead to potentially more valuable content being evicted from the cache due to low space.
+
+4. We simply don't yet have a tested list of hostnames for it yet. This is the category you can help with - if you have something that doesn't fall into one of the above reasons not to include it, we would love to review your PR. See [the readme](https://github.com/uklans/cache-domains) for instructions on how to add a new CDN.
 
 ## SNI Proxy / HTTPS
 

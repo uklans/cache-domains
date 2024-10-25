@@ -1,20 +1,20 @@
 {
-	"ips": {
-		"adguardhome_upstream": ["94.140.14.140", "tls://dns.google", "https://dns.google/dns-query"],
-		"steam":	["10.10.3.10", "10.10.3.11"],
-		"origin":	"10.10.3.12",
-		"blizzard":	"10.10.3.13",
-		"windows":	"10.10.3.14",
-		"riot":		"10.10.3.15",
-		"generic":	"10.10.3.16"
-	},
-	"cache_domains": {
-		"default": 	"generic",
-		"blizzard": 	"blizzard",
-		"origin": 	"origin",
-		"riot": 	"riot",
-		"steam": 	"steam",
-		"wsus": 	"windows",
-		"xboxlive": 	"windows"
-	}
+    "combined_output": false,
+    "ips": {
+        "steam":        ["10.10.3.10", "10.10.3.11"],
+        "origin":       "10.10.3.12",
+        "blizzard":     "10.10.3.13",
+        "windows":      "10.10.3.14",
+        "riot":         "10.10.3.15",
+        "generic":      "10.10.3.16"
+    },
+    "cache_domains": {
+        "default":      "generic",
+        "blizzard":     "blizzard",
+        "origin":       "origin",
+        "riot":         "riot",
+        "steam":        "steam",
+        "wsus":         "windows",
+        "xboxlive":     "windows"
+    }
 }
