@@ -121,6 +121,11 @@
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
+		},
+        {
+			"name": "drivers",
+			"description": "Drivers repository",
+			"domain_files": ["drivers.txt"]
 		}
 	]
 }
