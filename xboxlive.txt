@@ -5,3 +5,8 @@ assets1.xboxlive.com.nsatc.net
 xvcf1.xboxlive.com
 xvcf2.xboxlive.com
 d1.xboxlive.com
+*.asrock.com
+*.asus.com
+*.msi.com
+*.amd.com
+*.nvidia.com
