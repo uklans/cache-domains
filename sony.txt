@@ -14,3 +14,5 @@ gst.prod.dl.playstation.net
 vulcan.dl.playstation.net
 sgst.prod.dl.playstation.net
 psnobj.prod.dl.playstation.net
+ps5.update.playstation.net 
+*.ps5.update.playstation.net
