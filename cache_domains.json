@@ -88,6 +88,11 @@
 			"domain_files": ["square.txt"]
 		},
 		{
+			"name": "startrekonline",
+			"description": "CDN for Star Trek Online",
+			"domain_files": ["startrekonline.txt"]
+		},
+		{
 			"name": "steam",
 			"description": "CDN for steam platform",
 			"domain_files": ["steam.txt"]
