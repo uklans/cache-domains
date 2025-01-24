@@ -11,10 +11,10 @@
 			"domain_files": ["blizzard.txt"]
 		},
 		{
-                        "name": "Debian",
-                        "description": "Debian related OS updates",
-                        "domain_files": ["debian.txt"]
-                },
+			"name": "Debian",
+			"description": "Debian related OS updates",
+			"domain_files": ["debian.txt"]
+		},
 		{
 			"name": "bsg",
 			"description": "CDN for Battle State Games, Tarkov",
