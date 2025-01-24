@@ -1,0 +1,4 @@
+deb.debian.org
+security.debian.org
+archive.raspberrypi.com
+httpredir.debian.org

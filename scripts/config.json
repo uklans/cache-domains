@@ -1,7 +1,7 @@
 {
     "combined_output": false,
     "ips": {
-        "monolithic":   ["192.168.74.208"]
+        "monolithic":   ["192.168.74.210"]
     },
     "cache_domains": {
         "blizzard":     "monolithic",
@@ -12,6 +12,7 @@
         "sony":         "monolithic",
         "steam":        "monolithic",
         "uplay":        "monolithic",
-        "wsus":         "monolithic"
+        "wsus":         "monolithic",
+        "debian":       "monolithic"
     }
 }
