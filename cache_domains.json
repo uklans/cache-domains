@@ -11,7 +11,7 @@
 			"domain_files": ["blizzard.txt"]
 		},
 		{
-			"name": "Debian",
+			"name": "debian",
 			"description": "Debian related OS updates",
 			"domain_files": ["debian.txt"]
 		},
