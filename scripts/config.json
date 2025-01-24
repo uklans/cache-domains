@@ -1,0 +1,17 @@
+{
+    "combined_output": false,
+    "ips": {
+        "monolithic":   ["192.168.74.208"]
+    },
+    "cache_domains": {
+        "blizzard":     "monolithic",
+        "epicgames":    "monolithic",
+        "nintendo":     "monolithic",
+        "origin":       "monolithic",
+        "riot":         "monolithic",
+        "sony":         "monolithic",
+        "steam":        "monolithic",
+        "uplay":        "monolithic",
+        "wsus":         "monolithic"
+    }
+}
