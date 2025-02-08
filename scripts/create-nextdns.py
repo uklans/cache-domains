@@ -15,7 +15,7 @@ CACHE_DOMAINS_JSON = "cache_domains.json"
 DELAY_SECONDS = 1  # delay between requests
 MAX_RETRIES = 5  # maximum retries if rate limited
 BACKOFF_FACTOR = 2  # exponential backoff multiplier
-USER_AGENT = "python-requests/2.31.0"
+USER_AGENT = "python-requests/2.31.0"  # for some reason, Cloudflare will block urllib's default user-agent
 
 
 def post_redirect(base_url, api_key, payload):
