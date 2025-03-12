@@ -121,6 +121,11 @@
 			"name": "xboxlive",
 			"description": "CDN for xboxlive",
 			"domain_files": ["xboxlive.txt"]
-		}
+		},
+        {
+            "name": "zzz",
+            "description": "CDN for ZenlessZoneZero (Not All Hoyoverse Games)",
+            "domain_files": ["zenlesszonezero.txt"]
+        }
 	]
 }
