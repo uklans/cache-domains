@@ -10,6 +10,11 @@
 			"description": "CDN for blizzard/battle.net",
 			"domain_files": ["blizzard.txt"]
 		},
+        {
+			"name": "cod",
+			"description": "CDN for Call of Duty",
+			"domain_files": ["cod.txt"]
+		},
 		{
 			"name": "bsg",
 			"description": "CDN for Battle State Games, Tarkov",
