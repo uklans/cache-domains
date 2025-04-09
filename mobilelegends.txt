@@ -1,0 +1,5 @@
+akmcdn.ml.youngjoygame.com
+akmcdn.ml.youngjoygame.com.akamaized.net
+cycdn.ml.youngjoygame.com
+cycdn.ml.youngjoygame.com.cy-isp.com
+cycdnml.edge.swiftserve.com
