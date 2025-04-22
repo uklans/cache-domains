@@ -1,0 +1,4 @@
+a1916.dscg2.akamai.net
+sdk-os-static.hoyoverse.com
+autopatchhk.yuanshen.com
+*.hoyolab.com
