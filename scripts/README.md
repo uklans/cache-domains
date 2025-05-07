@@ -10,6 +10,7 @@ configuration which can be utilised with:
 * Dnsmasq/Pi-hole
 * Squid
 * Unbound
+* FortiOS
 
 ## Usage
 
@@ -37,7 +38,7 @@ The following example assumes a single shared Cacheserver IP:
 }
 ```
 3. Run generation script relative to your DNS implementation: `bash create-dnsmasq.sh`.
-4. If `combined_output` is set to `true` this will result in a single output file: `lancache.conf` with all your enabled services (applies to Adguard Home, Dnsmasq or Unbound).
+4. If `combined_output` is set to `true` this will result in a single output file: `lancache.conf` with all your enabled services (applies to Adguard Home, Dnsmasq, Unbound or FortiOS).
 5. Copy files from `output/{adguardhome,dnsmasq,rpz,squid,unbound}/*` to the respective locations for Dnsmasq/Unbound.
 6. Restart the appropriate service.
 
