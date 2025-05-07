@@ -11,3 +11,4 @@ download4.epicgames.com
 epicgames-download1.akamaized.net
 fastly-download.epicgames.com
 cloudflare.epicgamescdn.com
+egdownload.fastly-edge.com
