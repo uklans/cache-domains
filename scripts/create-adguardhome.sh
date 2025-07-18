@@ -59,7 +59,8 @@ while read entry; do
                     continue
                 fi
                 for i in ${cacheip}; do
-                    echo "${domainprefix}${parsed}^\$dnsrewrite=${i},dnstype=A" >> ${outputfile}
+                    echo "${domainprefix}${parsed}^\$dnsrewrite=${i}" >> ${outputfile}
+                    echo "${domainprefix}${parsed}^\$dnstype=AAAA" >> ${outputfile}
                 done
             done <<< $(cat ${basedir}/$filename | sort);
         done <<< $(jq -r ".cache_domains[${entry}].domain_files[${fileid}]" ${path})
