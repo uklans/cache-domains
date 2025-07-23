@@ -1,0 +1,21 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: sort cache domains
+      run: jq ".cache_domains |= sort_by(.name)" {all_files} > {all_files}.tmp && mv {all_files}.tmp {all_files}
+      glob: "cache_domains.json"
+      stage_fixed: true
+
+    - name: sort cdns
+      run: |
+        for f in {all_files}; do
+          sort -u -o ${f} ${f}
+        done
+      env:
+        LC_ALL: C
+      glob: "*.txt"
+      stage_fixed: true
+
+    - name: megalinter
+      run: docker run --rm -e USER=$(id -u) -e GROUP=$(id -g) -v "$PWD:/tmp/lint" oxsecurity/megalinter:v8
+      stage_fixed: true

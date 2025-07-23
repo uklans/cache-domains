@@ -1,6 +1,6 @@
-canary.uklans.net
-litmus.uklans.net
-trigger.uklans.net
 canary.lancache.net
+canary.uklans.net
 litmus.lancache.net
+litmus.uklans.net
 trigger.lancache.net
+trigger.uklans.net

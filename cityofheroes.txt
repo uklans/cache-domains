@@ -1,4 +1,4 @@
+cdn-eu1.homecomingservers.com
 cdn-na1.homecomingservers.com
 cdn-na2.homecomingservers.com
 cdn-na3.homecomingservers.com
-cdn-eu1.homecomingservers.com

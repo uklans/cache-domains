@@ -1,2 +1,3 @@
 scripts/output
 scripts/config.json
+megalinter-reports/
