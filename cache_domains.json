@@ -2,12 +2,12 @@
   "cache_domains": [
     {
       "name": "arenanet",
-      "description": "CDN for guild wars, HoT",
+      "description": "CDN for Guild Wars, HoT",
       "domain_files": ["arenanet.txt"]
     },
     {
       "name": "blizzard",
-      "description": "CDN for blizzard/battle.net",
+      "description": "CDN for Blizzard/Battle.net",
       "domain_files": ["blizzard.txt"]
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "daybreak",
-      "description": "Daybreak games CDN",
+      "description": "CDN for Daybreak Games",
       "domain_files": ["daybreak.txt"]
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "name": "frontier",
-      "description": "CDN for frontier games",
+      "description": "CDN for Frontier Games",
       "domain_files": ["frontier.txt"]
     },
     {
@@ -47,17 +47,17 @@
     },
     {
       "name": "nexusmods",
-      "description": "Nexus mods / skyrim content",
+      "description": "CDN for Nexus Mods/Skyrim content",
       "domain_files": ["nexusmods.txt"]
     },
     {
       "name": "nintendo",
-      "description": "CDN for Nintendo consoles and download servers",
+      "description": "CDN for Nintendo consoles",
       "domain_files": ["nintendo.txt"]
     },
     {
       "name": "origin",
-      "description": "CDN for origin",
+      "description": "CDN for Origin",
       "notes": "Should be enabled for HTTP traffic only or with a HTTPS proxy else origin client download fails",
       "mixed_content": true,
       "domain_files": ["origin.txt"]
@@ -74,17 +74,17 @@
     },
     {
       "name": "riot",
-      "description": "CDN for riot games",
+      "description": "CDN for Riot Games",
       "domain_files": ["riot.txt"]
     },
     {
       "name": "rockstar",
-      "description": "CDN for rockstar games",
+      "description": "CDN for Rockstar Games",
       "domain_files": ["rockstar.txt"]
     },
     {
       "name": "sony",
-      "description": "CDN for sony / playstation",
+      "description": "CDN for Sony/PSN",
       "domain_files": ["sony.txt"]
     },
     {
@@ -94,7 +94,7 @@
     },
     {
       "name": "steam",
-      "description": "CDN for steam platform",
+      "description": "CDN for Steam",
       "domain_files": ["steam.txt"]
     },
     {
@@ -104,12 +104,12 @@
     },
     {
       "name": "test",
-      "description": "Test CDN, recommended to enable for additional diagnostics",
+      "description": "CDN for Testing, recommended to enable for additional diagnostics",
       "domain_files": ["test.txt"]
     },
     {
       "name": "uplay",
-      "description": "CDN for uplay downloader",
+      "description": "CDN for Ubisoft",
       "domain_files": ["uplay.txt"]
     },
     {
@@ -119,17 +119,17 @@
     },
     {
       "name": "wargaming",
-      "description": "CDN for wargaming.net",
+      "description": "CDN for Wargaming.net",
       "domain_files": ["wargaming.net.txt"]
     },
     {
       "name": "wsus",
-      "description": "CDN for windows updates",
+      "description": "CDN for Windows Updates",
       "domain_files": ["windowsupdates.txt"]
     },
     {
       "name": "xboxlive",
-      "description": "CDN for xboxlive",
+      "description": "CDN for Xbox Live",
       "domain_files": ["xboxlive.txt"]
     }
   ]
