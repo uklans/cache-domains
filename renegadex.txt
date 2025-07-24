@@ -1,2 +1,2 @@
-patches.totemarts.services
 patches.totemarts.games
+patches.totemarts.services
