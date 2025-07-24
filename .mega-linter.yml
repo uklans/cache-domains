@@ -23,6 +23,17 @@ DISABLE_LINTERS:
   - SPELL_CSPELL
   - YAML_V8R
 
+PRE_COMMANDS:
+  - command: apk add --no-cache yq
+    cwd: root
+  - command: yq -i ".cache_domains |= sort_by(.name)" cache_domains.json
+    cwd: workspace
+  - command: |
+      for f in *.txt; do
+        sort -uo ${f} ${f}
+      done
+    cwd: workspace
+
 POST_COMMANDS:
   - command: find . -user root -group root -exec chown ${USER}:${GROUP} {} \;
-    cwd: "workspace"
+    cwd: workspace
