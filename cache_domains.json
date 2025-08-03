@@ -8,6 +8,7 @@
 	  {
       "name": "AmazonGamesTest",
       "description": "CDN Test For Amazon Games Launcher",
+      "mixed_content": true,
       "domain_files": ["agtest.txt"]
     },
     {
