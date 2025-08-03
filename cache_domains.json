@@ -67,6 +67,11 @@
       "description": "CDN for Path Of Exile",
       "domain_files": ["pathofexile.txt"]
     },
+	  {
+      "name": "pirate101",
+      "description": "CDN for KingsIsle Pirate101 MMO",
+      "domain_files": ["pirate101.txt"]
+    },
     {
       "name": "renegadex",
       "description": "CDN for Renegade X",
@@ -121,6 +126,11 @@
       "name": "wargaming",
       "description": "CDN for Wargaming.net",
       "domain_files": ["wargaming.net.txt"]
+    },
+    {
+      "name": "wizard101",
+      "description": "CDN for KingsIsle Wizard101 MMO",
+      "domain_files": ["wizard101.txt"]
     },
     {
       "name": "wsus",
