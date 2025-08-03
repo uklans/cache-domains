@@ -5,6 +5,11 @@
       "description": "CDN for Guild Wars, HoT",
       "domain_files": ["arenanet.txt"]
     },
+	  {
+      "name": "Amazon Games Test",
+      "description": "CDN Test For Amazon Games Launcher",
+      "domain_files": ["AGTEST.txt"]
+    },
     {
       "name": "blizzard",
       "description": "CDN for Blizzard/Battle.net",
