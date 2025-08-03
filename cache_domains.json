@@ -6,9 +6,9 @@
       "domain_files": ["arenanet.txt"]
     },
 	  {
-      "name": "Amazon Games Test",
+      "name": "AmazonGamesTest",
       "description": "CDN Test For Amazon Games Launcher",
-      "domain_files": ["AGTEST.txt"]
+      "domain_files": ["agtest.txt"]
     },
     {
       "name": "blizzard",
