@@ -125,6 +125,7 @@
     {
       "name": "wizard101",
       "description": "CDN for Wizard101 MMO",
+      "mixed_content": true,
       "domain_files": ["wizard101.txt"]
     },
     {
