@@ -123,6 +123,11 @@
       "domain_files": ["wargaming.net.txt"]
     },
     {
+      "name": "wizard101",
+      "description": "CDN for Wizard101 MMO",
+      "domain_files": ["wizard101.txt"]
+    },
+    {
       "name": "wsus",
       "description": "CDN for Windows Updates",
       "domain_files": ["windowsupdates.txt"]
