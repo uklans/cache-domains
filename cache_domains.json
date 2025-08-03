@@ -124,9 +124,15 @@
     },
     {
       "name": "wizard101",
-      "description": "CDN for Wizard101 MMO",
+      "description": "CDN for KingsIsle Wizard101 MMO",
       "mixed_content": true,
       "domain_files": ["wizard101.txt"]
+    },
+	  {
+      "name": "pirate101",
+      "description": "CDN for KingsIsle Pirate101 MMO",
+      "mixed_content": true,
+      "domain_files": ["pirate101.txt"]
     },
     {
       "name": "wsus",
