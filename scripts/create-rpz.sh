@@ -14,8 +14,6 @@ if ! command -v jq >/dev/null; then
 	exit 1
 fi
 
-cachenamedefault="disabled"
-
 while read -r line; do
 	ip=$(jq ".ips[\"${line}\"]" config.json)
 	declare "cacheip${line}"="${ip}"
@@ -50,7 +48,7 @@ while read -r entry; do
 	key=$(jq -r ".cache_domains[${entry}].name" ${path})
 	cachename="cachename${key}"
 	if [ -z "${!cachename}" ]; then
-		cachename=${cachenamedefault}
+		cachename="cachenamedefault"
 	fi
 	if [[ ${cachename} == "disabled" ]]; then
 		continue
