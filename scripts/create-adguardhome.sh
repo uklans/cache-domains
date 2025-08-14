@@ -13,7 +13,6 @@ if ! command -v jq >/dev/null; then
 	exit 1
 fi
 
-cachenamedefault="disabled"
 combinedoutput=$(jq -r ".combined_output" config.json)
 
 while read -r line; do
@@ -34,7 +33,7 @@ while read -r entry; do
 	key=$(jq -r ".cache_domains[$entry].name" ${path})
 	cachename="cachename${key}"
 	if [ -z "${!cachename}" ]; then
-		cachename=${cachenamedefault}
+		cachename="cachenamedefault"
 	fi
 	if [[ ${cachename} == "disabled" ]]; then
 		continue
