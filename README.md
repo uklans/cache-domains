@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a list of all hostnames that are required to be redirected for running a game content cache. This list will change frequently so this is designed to be a definitive list.
+This is a list of all hostnames that are required to be redirected for running a game content cache. This list will change frequently, so this is not designed to be a definitive list.
 
 ## Usage
 
@@ -17,7 +17,7 @@ There is a cache_domains.json file to define CDNs and additional metadata with t
     - name: shortname for the cache domain. Should match `^[0-9A-Za-z]$`
     - description: a longer description to aid others in identifying what this domain does (not all users of this repo will want to enable all caches)
     - notes: implementation specific notes which may be useful for other users
-    - domain_files: array of files within the repo associated to the cdn. Most CDNs only need one file
+    - domain_files: array of files within the repo associated to the CDN. Most CDNs only need one file
     - Example domain entry for steam
 ```json
 {
