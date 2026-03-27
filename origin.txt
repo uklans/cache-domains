@@ -1,3 +1,4 @@
 cdn-patch.swtor.com
 lvlt.cdn.ea.com
 origin-a.akamaihd.net
+prod.cloudflare.cdn.ea.com
