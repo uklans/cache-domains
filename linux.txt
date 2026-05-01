@@ -357,6 +357,9 @@ fastly.linuxmint.io
 mirrors.cicku.me
 packages.linuxmint.com
 
+# SteamOS
+repo.steampowered.com
+
 # Proxmox PVE
 ftp.de.debian.org
 ownload.proxmox.com
