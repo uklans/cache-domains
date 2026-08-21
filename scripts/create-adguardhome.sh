@@ -68,7 +68,7 @@ while read -r entry; do
 done <<<"$(jq -r ".cache_domains | to_entries[] | .key" ${path})"
 
 if [[ ${combinedoutput} == "true" ]]; then
-	for file in "${outputdir}"/*; do f=${file//${outputdir}\//} && f=${f//.conf/} && echo "# ${f^}" >>${outputdir}/lancache.conf && cat "${file}" >>${outputdir}/lancache.conf && rm "${file}"; done
+	for file in "${outputdir}"/*; do f=${file//${outputdir}\//} && f=${f//.conf/} && echo "! ${f^}" >>${outputdir}/lancache.conf && cat "${file}" >>${outputdir}/lancache.conf && rm "${file}"; done
 fi
 
 cat <<EOF
