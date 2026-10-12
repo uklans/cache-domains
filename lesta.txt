@@ -1,0 +1,4 @@
+*.cdn.tanki.su
+*.download.lesta.ru
+cdn.tanki.su
+download.lesta.ru

@@ -1,0 +1,8 @@
+*.cdn.vkplay.ru
+*.dl.mail.ru
+*.dl.vkplay.ru
+*.static.gc.vkplay.ru
+cdn.vkplay.ru
+dl.mail.ru
+dl.vkplay.ru
+static.gc.vkplay.ru

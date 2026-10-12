@@ -1,0 +1,4 @@
+*.cdn.astrum-entertainment.ru
+*.download.astrum-entertainment.ru
+cdn.astrum-entertainment.ru
+download.astrum-entertainment.ru

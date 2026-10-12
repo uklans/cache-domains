@@ -1,0 +1,4 @@
+*.cdn.4game.com
+*.launcher.eu.4game.com
+cdn.4game.com
+launcher.eu.4game.com

@@ -1,0 +1,8 @@
+*.cdn.gaijin.net
+aws-yup-distr-01.gaijinent.com
+aws-yup-distr-02.gaijinent.com
+aws-yup-distr-03.gaijinent.com
+aws-yup-distr-04.gaijinent.com
+cdn.gaijin.net
+cdnnow-distr.gaijinent.com
+yupmaster.gaijinent.com

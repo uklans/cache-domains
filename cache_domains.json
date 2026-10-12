@@ -6,6 +6,11 @@
       "domain_files": ["arenanet.txt"]
     },
     {
+      "name": "astrum",
+      "description": "CDN for Astrum launcher",
+      "domain_files": ["astrum.txt"]
+    },
+    {
       "name": "blizzard",
       "description": "CDN for Blizzard/Battle.net",
       "domain_files": ["blizzard.txt"]
@@ -36,9 +41,24 @@
       "domain_files": ["epicgames.txt"]
     },
     {
+      "name": "fourgame",
+      "description": "CDN for 4game / Innova launcher",
+      "domain_files": ["fourgame.txt"]
+    },
+    {
       "name": "frontier",
       "description": "CDN for Frontier Games",
       "domain_files": ["frontier.txt"]
+    },
+    {
+      "name": "gaijin",
+      "description": "CDN for Gaijin.Net launcher and games",
+      "domain_files": ["gaijin.txt"]
+    },
+    {
+      "name": "lesta",
+      "description": "CDN for Lesta Game Center",
+      "domain_files": ["lesta.txt"]
     },
     {
       "name": "neverwinter",
@@ -111,6 +131,11 @@
       "name": "uplay",
       "description": "CDN for Ubisoft",
       "domain_files": ["uplay.txt"]
+    },
+    {
+      "name": "vkplay",
+      "description": "CDN for VK Play / Mail.ru GameCenter",
+      "domain_files": ["vkplay.txt"]
     },
     {
       "name": "warframe",
