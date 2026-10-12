@@ -5,3 +5,4 @@ d1.xboxlive.com
 xbox-mbr.xboxlive.com
 xvcf1.xboxlive.com
 xvcf2.xboxlive.com
+assets1.xboxlive.com.edgesuite.net
