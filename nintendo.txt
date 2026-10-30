@@ -21,3 +21,9 @@ kanzashi-wup.cdn.nintendo.net
 # Nintendo 3DS
 *.ctr.shop.nintendo.net
 *.cdn.c.shop.nintendowifi.net
+
+# Nintendo DSi
+*.cdn.t.shop.nintendowifi.net
+
+# Nintendo Wii
+*.cdn.shop.wii.com
