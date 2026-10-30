@@ -15,3 +15,9 @@ geisha-wup.cdn.nintendo.net
 geisha-wup.cdn.nintendo.net.edgekey.net
 idbe-wup.cdn.nintendo.net
 idbe-wup.cdn.nintendo.net.edgekey.net
+samurai-wup.cdn.nintendo.net
+kanzashi-wup.cdn.nintendo.net
+
+# Nintendo 3DS
+*.ctr.shop.nintendo.net
+*.cdn.c.shop.nintendowifi.net
