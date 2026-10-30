@@ -1,11 +1,29 @@
+# Nintendo Switch 2
+*.hac.p01.d4c.nintendo.net
+*.hac.p01.eshop.nintendo.net
+
+# Nintendo Switch
 *.hac.lp1.d4c.nintendo.net
 *.hac.lp1.eshop.nintendo.net
+ecs-lp1.hac.shop.nintendo.net
+
+# Nintendo Wii U
 *.wup.eshop.nintendo.net
 *.wup.shop.nintendo.net
 ccs.cdn.wup.shop.nintendo.net.edgesuite.net
-ecs-lp1.hac.shop.nintendo.net
 geisha-wup.cdn.nintendo.net
 geisha-wup.cdn.nintendo.net.edgekey.net
 idbe-wup.cdn.nintendo.net
 idbe-wup.cdn.nintendo.net.edgekey.net
-receive-lp1.dg.srv.nintendo.net
+samurai-wup.cdn.nintendo.net
+kanzashi-wup.cdn.nintendo.net
+
+# Nintendo 3DS
+*.ctr.shop.nintendo.net
+*.cdn.c.shop.nintendowifi.net
+
+# Nintendo DSi
+*.cdn.t.shop.nintendowifi.net
+
+# Nintendo Wii
+*.cdn.shop.wii.com

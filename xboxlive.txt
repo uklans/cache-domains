@@ -6,3 +6,7 @@ xbox-mbr.xboxlive.com
 xvcf1.xboxlive.com
 xvcf2.xboxlive.com
 assets1.xboxlive.com.edgesuite.net
+
+# Xbox 360 content
+download.xbox.com
+download.xbox.com.edgesuite.net
