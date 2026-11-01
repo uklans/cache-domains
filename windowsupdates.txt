@@ -10,4 +10,3 @@ amupdatedl4.microsoft.com
 amupdatedl5.microsoft.com
 dl.delivery.mp.microsoft.com
 officecdn.microsoft.com
-officecdn.microsoft.com.edgesuite.net
